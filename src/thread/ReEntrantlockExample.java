@@ -23,7 +23,7 @@ public class ReEntrantlockExample {
         T1.start();
         T2.start();
         T3.start();
-        
+
     }
 
     static class Counter {
