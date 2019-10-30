@@ -2,10 +2,13 @@ package Utills;
 
 import bst.BST;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
  * Created by amit on 14/7/18.
  */
-public class Utills {
+public class Utills{
 
     public static int maxElementOfArray(int a[]) {
         int max = Integer.MIN_VALUE;
@@ -59,5 +62,29 @@ public class Utills {
         int left = sizeOfTree(root.left);
         int right = sizeOfTree(root.right);
         return left + right + 1;
+    }
+
+    public static void printArray(int a[]) {
+        for (int i: a){
+            System.out.print(i +", ");
+        }
+        System.out.println();
+    }
+
+    public static void printArrayList(ArrayList<String> arrayList) {
+        System.out.println("List Contents : ");
+        Iterator iterator = arrayList.listIterator();
+        int count = 1;
+        while (iterator.hasNext()) {
+            System.out.println(count + ") " + iterator.next());
+        }
+    }
+
+    public static double getMedian(int a[]) {
+        int len = a.length;
+        if(len %2 ==0) {
+            return (a[len/2]+a[len/2-1])/2.0;
+        }
+        return a[len/2];
     }
 }

@@ -20,7 +20,8 @@ public class LevelOrderChange {
         root.left.right.left = new BST<>(10);
         root.left.right.right = new BST<>(11);
         LevelOrderChange obj =  new LevelOrderChange();
-        obj.printlevelorder(root);
+        obj.printLevelOrder1(root);
+        System.out.println(obj.getMaxPathSum(root));
 
     }
 
@@ -32,6 +33,48 @@ public class LevelOrderChange {
         int right = height(root.right);
         return 1 + Utills.max(right, left);
     }
+
+
+    void printLevelOrder1(BST<Integer> root) {
+        int h =  height(root);
+        for (int i = 1; i <= h; i++) {
+            // Zig Zag  print
+           // printLevelOrder1(root, i, i%2 ==0);
+            // level order print
+            printLevelOrder1(root, i, false);
+            System.out.println();
+        }
+    }
+
+    void printLevelOrder1(BST<Integer> root, int level, boolean flag) {
+        if(root == null) {
+            return;
+        }
+        if(level ==1) {
+            System.out.print(root.data + " ");
+            return;
+        }
+
+            if(flag) {
+                printLevelOrder1(root.right, level-1, flag);
+                printLevelOrder1(root.left, level -1 , flag);
+            } else {
+                printLevelOrder1(root.left, level-1, flag);
+                printLevelOrder1(root.right, level -1 , flag);
+            }
+
+    }
+
+
+
+    int getMaxPathSum(BST<Integer> root) {
+        if(root.left == null && root.right == null) {
+            return root.data;
+        }
+        return root.data + Math.max(getMaxPathSum(root.left), getMaxPathSum(root.right));
+    }
+
+
 
     void printlevelorder(BST<Integer> root) {
         int h = height(root);

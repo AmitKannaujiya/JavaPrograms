@@ -25,8 +25,75 @@ public class ReverseLevelOrderTraversal {
 
         ReverseLevelOrderTraversal obj = new ReverseLevelOrderTraversal();
         obj.reverseOrderTraversal(root);
+
+        obj.reverseLevelOrderTraversalRecursive(root);
     }
 
+    void reverseLevelOrderTraversalRecursive(BST<Integer> root) {
+        int height = heightOfTree(root);
+        System.out.println("\n###### Recursive Level Order Traversal #######");
+        for (int i = 1; i <= height; i++) {
+            reverseLevelOrderTraversalRecursiveUtills(root, i);
+            System.out.println();
+        }
+
+        System.out.println("\n###### Recursive Reverse Level Order Traversal #######");
+        for (int i = height; i >=1; i--) {
+            reverseLevelOrderTraversalRecursiveUtills(root, i);
+            System.out.println();
+        }
+
+        System.out.println("\n###### Recursive Reverse alternate Level Order Traversal #######");
+        boolean b = false;
+        for (int i = height; i >=1; i--) {
+            reverseLevelOrderTraversalRecursiveUtills(root, i, b);
+            System.out.println();
+            b ^= true;
+        }
+    }
+
+    void reverseLevelOrderTraversalRecursiveUtills(BST<Integer> root, int level, boolean itr) {
+        if(root == null) {
+            return;
+        }
+        if(level == 1) {
+            System.out.print(root.data+ " ");
+        } else {
+            if(itr) {
+                reverseLevelOrderTraversalRecursiveUtills(root.left, level -1);
+                reverseLevelOrderTraversalRecursiveUtills(root.right, level -1);
+            } else {
+                reverseLevelOrderTraversalRecursiveUtills(root.right, level -1);
+                reverseLevelOrderTraversalRecursiveUtills(root.left, level -1);
+            }
+
+        }
+    }
+
+    void reverseLevelOrderTraversalRecursiveUtills(BST<Integer> root, int level) {
+        if(root == null) {
+            return;
+        }
+        if(level == 1) {
+            System.out.print(root.data+ " ");
+        } else {
+            reverseLevelOrderTraversalRecursiveUtills(root.left, level -1);
+            reverseLevelOrderTraversalRecursiveUtills(root.right, level -1);
+        }
+    }
+
+    int heightOfTree(BST<Integer> root) {
+        if(root == null) {
+            return 0;
+        }
+        int left = heightOfTree(root.left);
+        int right = heightOfTree(root.right);
+
+        if(left > right) {
+            return left + 1;
+        }
+        return right +1;
+    }
     void reverseOrderTraversal(BST<Integer> root) throws IllegalAccessException {
         Queue<BST<Integer>> queue = new ArrayDeque<>();
         Stack<Integer> stack = new Stack<Integer>();
