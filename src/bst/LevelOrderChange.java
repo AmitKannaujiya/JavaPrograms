@@ -2,6 +2,8 @@ package bst;
 
 import Utills.Utills;
 
+import java.util.*;
+
 /**
  * Created by amit on 17/7/18.
  */
@@ -45,6 +47,34 @@ public class LevelOrderChange {
             System.out.println();
         }
     }
+
+
+    public List<List<Integer>> levelOrder(BST<Integer>  root) {
+        List<List<Integer>> list = new ArrayList<>();
+        HashMap<Integer, List<Integer>> hashMap = new LinkedHashMap<>();
+        Queue<BST> queue = new ArrayDeque<>();
+        if(root == null ){
+            return null;
+        }
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            List<Integer> list1 = new ArrayList<>();
+            while (size-- > 0) {
+                BST<Integer> node = queue.remove();
+                list1.add(node.data);
+                if(node.left!=null) {
+                    queue.add(node.left);
+                }
+                if(node.right!=null) {
+                    queue.add(node.right);
+                }
+            }
+            list.add(list1);
+        }
+        return list;
+    }
+
 
     void printLevelOrder1(BST<Integer> root, int level, boolean flag) {
         if(root == null) {
