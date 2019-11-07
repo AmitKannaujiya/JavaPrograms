@@ -14,12 +14,12 @@ public class DrawingClient extends JFrame {
     private final int WIDTH;
     private final int HEIGHT;
 
-    private static final ShapeFactory.ShapeType shapes[] = { ShapeFactory.ShapeType.LINE, ShapeFactory.ShapeType.OVAL_FILL, ShapeFactory.ShapeType.OVAL_NOFILL };
-    private static final Color colors[] = { Color.RED, Color.GREEN, Color.YELLOW };
+    private static final ShapeFactory.ShapeType shapes[] = {ShapeFactory.ShapeType.LINE, ShapeFactory.ShapeType.OVAL_FILL, ShapeFactory.ShapeType.OVAL_NOFILL};
+    private static final Color colors[] = {Color.RED, Color.GREEN, Color.YELLOW};
 
-    public DrawingClient(int width, int height){
-        this.WIDTH=width;
-        this.HEIGHT=height;
+    public DrawingClient(int width, int height) {
+        this.WIDTH = width;
+        this.HEIGHT = height;
         Container contentPane = getContentPane();
 
         JButton startButton = new JButton("Draw");
@@ -68,6 +68,6 @@ public class DrawingClient extends JFrame {
     }
 
     public static void main(String[] args) {
-        DrawingClient drawing = new DrawingClient(500,600);
+        DrawingClient drawing = new DrawingClient(500, 600);
     }
 }

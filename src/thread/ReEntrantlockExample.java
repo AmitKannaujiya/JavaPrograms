@@ -10,12 +10,12 @@ public class ReEntrantlockExample {
 
     public static void main(String[] args) {
         Counter counter = new Counter(new ReentrantLock());
-         Runnable runnable = new Runnable() {
-             @Override
-             public void run() {
-                 System.out.println("Current Thread : " + Thread.currentThread().getName() + " count : " + counter.getCount());
-             }
-         };
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Current Thread : " + Thread.currentThread().getName() + " count : " + counter.getCount());
+            }
+        };
         Thread T1 = new Thread(runnable, "T1");
         Thread T2 = new Thread(runnable, "T2");
         Thread T3 = new Thread(runnable, "T3");
@@ -29,6 +29,7 @@ public class ReEntrantlockExample {
     static class Counter {
         Lock lock;
         int count = 0;
+
         Counter(Lock lock) {
             this.lock = lock;
         }

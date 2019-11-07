@@ -7,7 +7,7 @@ public class SmallestPositiveIntMissing {
 
 
     public static void main(String[] args) {
-        int a [] = {1, 3, 6, 4, 1, 2};
+        int a[] = {1, 3, 6, 4, 1, 2};
         SmallestPositiveIntMissing obj = new SmallestPositiveIntMissing();
     }
 

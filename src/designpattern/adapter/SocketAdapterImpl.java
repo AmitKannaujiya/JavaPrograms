@@ -9,19 +9,19 @@ public class SocketAdapterImpl implements SocketAdapter {
     @Override
     public Volt get3Volt() {
         Volt volt = socket.getVolt();
-        volt.setVolt(volt.volt/40);
+        volt.setVolt(volt.volt / 40);
         return volt;
     }
 
     @Override
     public Volt get120Volt() {
-        return  socket.getVolt();
+        return socket.getVolt();
     }
 
     @Override
     public Volt get12Volt() {
         Volt volt = socket.getVolt();
-        volt.setVolt(volt.volt/10);
+        volt.setVolt(volt.volt / 10);
         return volt;
     }
 }

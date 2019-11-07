@@ -20,7 +20,7 @@ public class WrapperClassTest {
 
         try {
             System.out.println("Try");
-            String p="" ;
+            String p = "";
             System.out.print(p.substring(0, 9));
 
         } catch (Exception e) {

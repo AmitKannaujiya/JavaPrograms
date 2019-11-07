@@ -18,7 +18,7 @@ public class Stack<T> {
     }
 
     public T pop() throws IllegalAccessException {
-        if(isEmpty()) {
+        if (isEmpty()) {
             System.out.print(" stack is empty ");
             //throw new IllegalAccessException("Can't pop from empty Stack");
         }

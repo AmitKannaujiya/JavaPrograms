@@ -12,24 +12,24 @@ public class JumpCloud {
 
     // Complete the jumpingOnClouds function below.
     static int jumpingOnClouds(int[] c) {
-        int steps = 0, j=0;
-        if(c.length == 1) {
-            if( c[j] ==0)
+        int steps = 0, j = 0;
+        if (c.length == 1) {
+            if (c[j] == 0)
                 return steps++;
             return -1;
         }
-        for (int i = 1; i < c.length ; i++) {
-            if(i+1 == c.length ) {
+        for (int i = 1; i < c.length; i++) {
+            if (i + 1 == c.length) {
                 return ++steps;
             }
-            if(c[i] == 0 && c[i+1] ==0 ) {
-                j = i+1;
+            if (c[i] == 0 && c[i + 1] == 0) {
+                j = i + 1;
                 steps++;
-            } else if (c[i] == 0 && c[i+1] ==1) {
+            } else if (c[i] == 0 && c[i + 1] == 1) {
                 j = i;
                 steps++;
-            } else if (c[i] == 1 && c[i+1] ==0) {
-                j = i +1;
+            } else if (c[i] == 1 && c[i + 1] == 0) {
+                j = i + 1;
                 steps++;
             }
 

@@ -1,6 +1,15 @@
 package interfaces;
-interface IAnial{
-    default void walk(){System.out.println("animal walk");} void fly(); void makeSound(); }
+
+interface IAnial {
+    default void walk() {
+        System.out.println("animal walk");
+    }
+
+    void fly();
+
+    void makeSound();
+}
+
 public class InterfaeTest {
     public static void main(String[] args) {
         IAnial python = new Python();
@@ -18,7 +27,17 @@ public class InterfaeTest {
 
     }
 }
-interface Ireptile{default void crawal(){System.out.println("reptile crawal");}  void makeSound();void makeEggs(); }
+
+interface Ireptile {
+    default void crawal() {
+        System.out.println("reptile crawal");
+    }
+
+    void makeSound();
+
+    void makeEggs();
+}
+
 class Cat implements IAnial {
     @Override
     public void fly() {
@@ -30,7 +49,8 @@ class Cat implements IAnial {
         System.out.println("meoo meoo");
     }
 }
-class Python implements IAnial,Ireptile {
+
+class Python implements IAnial, Ireptile {
     @Override
     public void fly() {
         System.out.println("Can't fly");

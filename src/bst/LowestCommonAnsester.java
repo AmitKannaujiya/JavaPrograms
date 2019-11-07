@@ -6,7 +6,7 @@ package bst;
 public class LowestCommonAnsester {
 
     public static void main(String[] args) {
-        BST<Integer> root2 =  new BST<>(4);
+        BST<Integer> root2 = new BST<>(4);
         root2.left = new BST<>(2);
         root2.right = new BST<>(5);
         root2.left.left = new BST<>(1);
@@ -14,7 +14,7 @@ public class LowestCommonAnsester {
         LowestCommonAnsester lca = new LowestCommonAnsester();
         System.out.println(lca.LowestCommonAnsester(root2, 2, 5));
 
-        BST<Integer> root1 =  new BST<>(1);
+        BST<Integer> root1 = new BST<>(1);
         root1.left = new BST<>(2);
         root1.right = new BST<>(3);
         root1.left.left = new BST<>(4);
@@ -31,9 +31,9 @@ public class LowestCommonAnsester {
     }
 
     public int LowestCommonAnsester(BST<Integer> node, int node1, int node2) {
-        if(node.data >= node1 && node.data <= node2)
+        if (node.data >= node1 && node.data <= node2)
             return node.data;
-        else if(node.data > node1 && node.data > node2)
+        else if (node.data > node1 && node.data > node2)
             return LowestCommonAnsester(node.left, node1, node2);
         else
             return LowestCommonAnsester(node.right, node1, node2);

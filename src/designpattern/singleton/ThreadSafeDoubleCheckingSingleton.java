@@ -7,12 +7,13 @@ public class ThreadSafeDoubleCheckingSingleton {
 
     public static ThreadSafeDoubleCheckingSingleton INSTANCE;
 
-    private ThreadSafeDoubleCheckingSingleton() {}
+    private ThreadSafeDoubleCheckingSingleton() {
+    }
 
     public static synchronized ThreadSafeDoubleCheckingSingleton getInstance() {
-        if(INSTANCE == null) {
+        if (INSTANCE == null) {
             synchronized (ThreadSafeDoubleCheckingSingleton.class) {
-                if (INSTANCE== null) {
+                if (INSTANCE == null) {
                     INSTANCE = new ThreadSafeDoubleCheckingSingleton();
                 }
             }

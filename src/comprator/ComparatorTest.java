@@ -10,7 +10,7 @@ public class ComparatorTest {
 
     public static void main(String[] args) {
         ArrayList<Employee> employees = new ArrayList<>();
-        ComparatorTest obj =  new ComparatorTest();
+        ComparatorTest obj = new ComparatorTest();
         obj.createEmployees(employees);
         System.out.println("*******before sorting*********");
         obj.print(employees);
@@ -25,15 +25,15 @@ public class ComparatorTest {
     }
 
     public void createEmployees(ArrayList<Employee> employees) {
-        Employee employee1 =  new Employee("Amit", 30);
+        Employee employee1 = new Employee("Amit", 30);
 
-        Employee employee2 =  new Employee("Amit", 33);
+        Employee employee2 = new Employee("Amit", 33);
 
-        Employee employee3 =  new Employee("Amit", 28);
+        Employee employee3 = new Employee("Amit", 28);
 
-        Employee employee4 =  new Employee("Anil", 30);
+        Employee employee4 = new Employee("Anil", 30);
 
-        Employee employee5 =  new Employee("Aakriti", 31);
+        Employee employee5 = new Employee("Aakriti", 31);
 
         employees.add(employee4);
         employees.add(employee1);

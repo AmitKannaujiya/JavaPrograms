@@ -10,7 +10,7 @@ public class CandidateSort implements Comparator<Candidate> {
     @Override
     public int compare(Candidate a, Candidate b) {
         int diff = (int) (b.getVotes() - a.getVotes());
-        if(diff == 0) {
+        if (diff == 0) {
             return a.getName().compareTo(b.getName());
         }
         return diff;

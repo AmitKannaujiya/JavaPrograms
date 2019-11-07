@@ -190,16 +190,16 @@ public class PreOrderTraversal {
             while (size > 0) {
                 BST<Integer> node = queue.remove();
                 list.add(node.data);
-                if(node.left != null) {
+                if (node.left != null) {
                     queue.add(node.left);
                 }
-                if(node.right != null) {
+                if (node.right != null) {
                     queue.add(node.right);
                 }
                 size--;
             }
-            for(Integer data : list) {
-                System.out.print(data +" ");
+            for (Integer data : list) {
+                System.out.print(data + " ");
             }
             System.out.println();
         }

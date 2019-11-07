@@ -21,8 +21,7 @@ public class MaximumTipProplem {
 //    43
 
 
-
-    public static void main (String[] args) throws IOException  {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int testCase = Integer.parseInt(br.readLine());
         while (testCase-- > 0) {
@@ -32,15 +31,15 @@ public class MaximumTipProplem {
             int X = Integer.parseInt(strs[1]);
             int Y = Integer.parseInt(strs[2]);
             int a[] = new int[N];
-            int b [] =new int[N];
+            int b[] = new int[N];
             String line3 = br.readLine();
             String[] strs3 = line3.trim().split("\\s+");
-            for(int i=0; i< N; i++) {
+            for (int i = 0; i < N; i++) {
                 a[i] = Integer.parseInt(strs3[i]);
             }
             String line4 = br.readLine();
             String[] strs4 = line4.trim().split("\\s+");
-            for(int i=0; i< N; i++) {
+            for (int i = 0; i < N; i++) {
                 b[i] = Integer.parseInt(strs4[i]);
             }
             System.out.println(getMaxTip(X, Y, N, a, b));
@@ -51,16 +50,16 @@ public class MaximumTipProplem {
         int[][] dp = new int[x + 1][y + 1];
 
         dp[0][0] = 0;
-        for (int i = 1;i <= x;i++) {
+        for (int i = 1; i <= x; i++) {
             dp[i][0] = (i <= n) ? dp[i - 1][0] + A[i - 1] : dp[i - 1][0];
         }
 
-        for (int i = 1;i <= y;i++) {
+        for (int i = 1; i <= y; i++) {
             dp[0][i] = (i <= n) ? dp[0][i - 1] + B[i - 1] : dp[0][i - 1];
         }
 
-        for (int i = 1;i <= x;i++) {
-            for (int j = 1;j <= y;j++) {
+        for (int i = 1; i <= x; i++) {
+            for (int j = 1; j <= y; j++) {
                 if (i + j <= n) {
                     dp[i][j] = Math.max(dp[i - 1][j] + A[i + j - 1], dp[i][j - 1] + B[i + j - 1]);
                 }
@@ -68,8 +67,8 @@ public class MaximumTipProplem {
         }
 
         int ans = Integer.MIN_VALUE;
-        for (int i = 0;i <= x;i++) {
-            for (int j = 0;j <= y;j++) {
+        for (int i = 0; i <= x; i++) {
+            for (int j = 0; j <= y; j++) {
                 if (i + j == n) {
                     ans = Math.max(ans, dp[i][j]);
                 }

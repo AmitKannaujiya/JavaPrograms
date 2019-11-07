@@ -48,30 +48,30 @@ public class CastVotesTest {
 
     public String voteCandidate(int candidateId) {
         Candidate candidate = null;
-        if(candidates.containsKey(candidateId)) {
+        if (candidates.containsKey(candidateId)) {
             candidate = candidates.get(candidateId);
-            candidate.setVotes(candidate.getVotes() +1); // this must be in side db transactions
+            candidate.setVotes(candidate.getVotes() + 1); // this must be in side db transactions
             candidates.put(candidateId, candidate);
             CandidateVote candidateVote = new CandidateVote("Success", candidate, new Date().toString());
 
         }
 
-        return candidate!=null? candidate.getName() : null;
+        return candidate != null ? candidate.getName() : null;
     }
 
     public void getTopK(int k) {
-         ArrayList<Candidate> candidateArrayList = new ArrayList<>(candidates.values());
-         candidateArrayList.sort(new CandidateSort());
+        ArrayList<Candidate> candidateArrayList = new ArrayList<>(candidates.values());
+        candidateArrayList.sort(new CandidateSort());
 
-         for (int i = 0; i<(candidateArrayList.size() > k ? k : candidateArrayList.size()); i++) {
-             System.out.println(candidateArrayList.get(i).toString());
-         }
+        for (int i = 0; i < (candidateArrayList.size() > k ? k : candidateArrayList.size()); i++) {
+            System.out.println(candidateArrayList.get(i).toString());
+        }
     }
 
     public void seedCandidate() {
         for (int i = 0; i < 24; i++) {
-            Candidate candidate = new Candidate(i+1, "Name => " + (i+1));
-            candidates.put(i+1, candidate);
+            Candidate candidate = new Candidate(i + 1, "Name => " + (i + 1));
+            candidates.put(i + 1, candidate);
         }
     }
 }

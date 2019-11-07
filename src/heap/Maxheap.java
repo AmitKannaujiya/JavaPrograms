@@ -7,49 +7,49 @@ import java.util.PriorityQueue;
  * Created by amit on 2/4/19.
  */
 public class Maxheap {
-    int [] heap;
+    int[] heap;
     int size;
     int maxSize;
 
     public Maxheap(int maxSize) {
-        this.heap = new int[maxSize+1];
+        this.heap = new int[maxSize + 1];
         this.size = 0;
         this.maxSize = maxSize;
         this.heap[0] = Integer.MAX_VALUE;
     }
 
     public int parent(int pos) {
-        return pos/2;
+        return pos / 2;
     }
 
     public int left(int pos) {
-        return 2* pos;
+        return 2 * pos;
     }
 
     public int right(int pos) {
-        return 2* pos + 1;
+        return 2 * pos + 1;
     }
 
     public boolean isLeaf(int pos) {
-        if(pos >= size/2 && pos <= size) {
-            return  true;
+        if (pos >= size / 2 && pos <= size) {
+            return true;
         }
         return false;
     }
 
-    private void  swap(int pos1, int pos2) {
+    private void swap(int pos1, int pos2) {
         int temp = heap[pos1];
         heap[pos1] = heap[pos2];
         heap[pos2] = temp;
     }
 
     public void maxHeapify(int pos) {
-        if(isLeaf(pos)) {
+        if (isLeaf(pos)) {
             return;
         }
 
-        if(heap[left(pos)] > heap[pos] || heap[right(pos)] > heap[pos]) {
-            if(heap[left(pos)] > heap[right(pos)]) {
+        if (heap[left(pos)] > heap[pos] || heap[right(pos)] > heap[pos]) {
+            if (heap[left(pos)] > heap[right(pos)]) {
                 swap(left(pos), pos);
                 maxHeapify(left(pos));
             } else {
@@ -68,8 +68,7 @@ public class Maxheap {
         }
     }
 
-    public void print()
-    {
+    public void print() {
         for (int i = 1; i <= size / 2; i++) {
             System.out.print(" PARENT : " + heap[i] + " LEFT CHILD : " +
                     heap[2 * i] + " RIGHT CHILD :" + heap[2 * i + 1]);
@@ -83,7 +82,6 @@ public class Maxheap {
         maxHeapify(1);
         return popped;
     }
-
 
 
     public static void main(String[] args) {

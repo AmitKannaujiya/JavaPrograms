@@ -21,13 +21,11 @@ public class SubTreeEqualNoOf0s1sGFG {
         root.left.right = new BST<>(0);
 
 
-
         root.left.right.left = new BST<>(1);
         root.left.right.left.left = new BST<>(1);
         root.left.right.right = new BST<>(0);
         root.left.right.right.left = new BST<>(1);
         root.left.right.right.left.left = new BST<>(1);
-
 
 
         PreOrderTraversal orderTraversal = new PreOrderTraversal();
@@ -37,9 +35,9 @@ public class SubTreeEqualNoOf0s1sGFG {
         System.out.println();
 
         SubTreeEqualNoOf0s1sGFG obj = new SubTreeEqualNoOf0s1sGFG();
-       // obj.sumTree(root);
+        // obj.sumTree(root);
         boolean hasValidSubTree = false;
-       // obj.size(root, hasValidSubTree);
+        // obj.size(root, hasValidSubTree);
 
         obj.convert(root);
         obj.sumTreeV2(root);
@@ -50,7 +48,7 @@ public class SubTreeEqualNoOf0s1sGFG {
         System.out.println();
         orderTraversal.levelOrderTraversalV1(root);
         System.out.println();
-        if(hasValidSubTree) {
+        if (hasValidSubTree) {
             System.out.println("Has Valid SubTree");
         } else {
             System.out.println("Not Has Valid SubTree");
@@ -59,36 +57,36 @@ public class SubTreeEqualNoOf0s1sGFG {
     }
 
     public int sumTree(BST<Integer> root) {
-        int a = 0, b=0;
-        if(root == null) {
+        int a = 0, b = 0;
+        if (root == null) {
             return 0;
         }
-        if(root.left!=null) {
+        if (root.left != null) {
             a = sumTree(root.left);
         }
-        if(root.right!=null) {
+        if (root.right != null) {
             b = sumTree(root.right);
         }
 
-        root.data += a+b;
+        root.data += a + b;
         return root.data;
     }
 
     public int size(BST<Integer> root, boolean hasValidSubTree) {
-        int a = 0, b=0;
-        if(root == null || hasValidSubTree) {
+        int a = 0, b = 0;
+        if (root == null || hasValidSubTree) {
             return 0;
         }
 
         a = size(root.left, hasValidSubTree);
 
-        a = a+1;
+        a = a + 1;
 
         b = size(root.right, hasValidSubTree);
 
         a = a + b;
 
-        if(a%2 == 0 && root.data == a/2) {
+        if (a % 2 == 0 && root.data == a / 2) {
             hasValidSubTree = true;
         }
 
@@ -101,7 +99,7 @@ public class SubTreeEqualNoOf0s1sGFG {
             return;
         }
         convert(root.left);
-        if(root.data == 0) {
+        if (root.data == 0) {
             root.data = -1;
         }
 
@@ -110,7 +108,7 @@ public class SubTreeEqualNoOf0s1sGFG {
 
     public int sumTreeV2(BST<Integer> root) {
         int a = 0, b = 0;
-        if(root == null) {
+        if (root == null) {
             return 0;
         }
         a = sumTreeV2(root.left);
@@ -120,20 +118,20 @@ public class SubTreeEqualNoOf0s1sGFG {
     }
 
     public boolean checkTree(BST<Integer> root, boolean hasValidTree) {
-        if(root == null) {
+        if (root == null) {
             return false;
         }
-        if(!hasValidTree) {
+        if (!hasValidTree) {
             hasValidTree = checkTree(root.left, hasValidTree);
         }
 
 
-        if(root.data == 0) {
+        if (root.data == 0) {
             hasValidTree = true;
             return hasValidTree;
         }
 
-        if(!hasValidTree) {
+        if (!hasValidTree) {
             hasValidTree = checkTree(root.right, hasValidTree);
         }
         return hasValidTree;

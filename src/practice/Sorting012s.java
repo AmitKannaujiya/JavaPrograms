@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 /**
  * Created by amit on 2/11/18.
- *
- 2
- 5
- 0 2 1 2 0
- 3
- 0 1 0
+ * <p>
+ * 2
+ * 5
+ * 0 2 1 2 0
+ * 3
+ * 0 1 0
  */
 public class Sorting012s {
     public static void main(String[] args) throws IOException {
@@ -44,24 +44,28 @@ public class Sorting012s {
     private void swap(int a[], int i, int j) {
         int temp = a[i];
         a[i] = a[j];
-        a[j]=temp;
+        a[j] = temp;
     }
 
     private void sortInGroups(int[] array) {
         int startIndex = 0;
-        int endIndex = array.length-1;
-        int count=0;
-        while (count!=2) {
+        int endIndex = array.length - 1;
+        int count = 0;
+        while (count != 2) {
             while (startIndex < endIndex) {
 
-                while (startIndex <= array.length-1 && array[startIndex] == count) { startIndex++;}
-                while (endIndex >=0&& array[endIndex] != count) { endIndex--;}
+                while (startIndex <= array.length - 1 && array[startIndex] == count) {
+                    startIndex++;
+                }
+                while (endIndex >= 0 && array[endIndex] != count) {
+                    endIndex--;
+                }
 
-                if(startIndex< endIndex && array[startIndex]!=count && array[endIndex]== count) {
+                if (startIndex < endIndex && array[startIndex] != count && array[endIndex] == count) {
                     swap(array, startIndex, endIndex);
                 }
             }
-            endIndex = array.length-1;
+            endIndex = array.length - 1;
             count++;
 
         }

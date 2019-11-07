@@ -26,20 +26,20 @@ public class InfiniteStringRepetition {
     // Complete the repeatedString function below.
     static long repeatedString(String s, long n) {
         int strLength = s.length();
-        int count = countA(s, ((strLength < n) ? strLength: (int)n));
-        if(count == 0)
+        int count = countA(s, ((strLength < n) ? strLength : (int) n));
+        if (count == 0)
             return 0;
 
-        long rem = n-strLength;
-        long lCount = ((rem / strLength)*count) + count;
-        int rest = (int)(rem % s.length());
+        long rem = n - strLength;
+        long lCount = ((rem / strLength) * count) + count;
+        int rest = (int) (rem % s.length());
         return lCount + countA(s, rest);
     }
 
     static int countA(String s, int length) {
-        int count =0;
-        for (int i = 0; i <length; i++) {
-            if(s.charAt(i)== 'a') {
+        int count = 0;
+        for (int i = 0; i < length; i++) {
+            if (s.charAt(i) == 'a') {
                 count++;
             }
         }

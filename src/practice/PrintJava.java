@@ -33,11 +33,11 @@ public class PrintJava {
         }
     }
 
-    static void operations(int a, int b, int c){
+    static void operations(int a, int b, int c) {
         long power = power(a, b);
         System.out.println(power);
-        System.out.println(power^c);
-        System.out.println(power%c);
+        System.out.println(power ^ c);
+        System.out.println(power % c);
 
     }
 
@@ -45,11 +45,11 @@ public class PrintJava {
     static long power(int a, int b) {
         long temp;
 
-        if(b==0) {
+        if (b == 0) {
             return 1;
         }
-        temp = power(a, b/2);
-        if(b%2 == 0) {
+        temp = power(a, b / 2);
+        if (b % 2 == 0) {
             return temp * temp;
         } else {
             return temp * temp * a;
@@ -61,43 +61,42 @@ public class PrintJava {
     // Function to find number of jumps
     // N : number inscribed on the last stone.
     // X : number on which we have to reach
-    static void findJumps(long N, long X){
+    static void findJumps(long N, long X) {
 
         long leftStep = X - 1;
-        if(X%2 ==0 ) {
-            leftStep=X;
+        if (X % 2 == 0) {
+            leftStep = X;
         }
         if (leftStep > 0) {
-            leftStep = leftStep/2;
+            leftStep = leftStep / 2;
         }
 
 
         long rightStep = N - X;
 
-        if(N%2==0 ) {
-            rightStep +=1;
-        }else if(X%2==0) {
-            rightStep-= 1;
+        if (N % 2 == 0) {
+            rightStep += 1;
+        } else if (X % 2 == 0) {
+            rightStep -= 1;
         }
 
-        if(rightStep >0) {
+        if (rightStep > 0) {
             rightStep /= 2;
         }
 
         System.out.println(leftStep > rightStep ? rightStep : leftStep);
 
 
-
     }
 
 
-    static void forkJava(int N){
+    static void forkJava(int N) {
 
-        if(N%15 == 0) {
+        if (N % 15 == 0) {
             System.out.println("Fork Java");
-        }else if(N%5 == 0) {
+        } else if (N % 5 == 0) {
             System.out.println("Java");
-        } else if(N%3 == 0) {
+        } else if (N % 3 == 0) {
             System.out.println("Fork");
         }
 

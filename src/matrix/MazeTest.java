@@ -3,23 +3,20 @@ package matrix;
 /**
  * Created by amit on 20/2/19.
  */
-public class MazeTest
-{
+public class MazeTest {
     static int R = 4;
     static int C = 4;
 
     // Returns count of possible paths in
     // a maze[R][C] from (0,0) to (R-1,C-1)
-    static int countPaths(int maze[][])
-    {
+    static int countPaths(int maze[][]) {
         // If the initial cell is blocked,
         // there is no way of moving anywhere
-        if (maze[0][0]==-1)
+        if (maze[0][0] == -1)
             return 0;
 
         // Initializing the leftmost column
-        for (int i = 0; i < R; i++)
-        {
+        for (int i = 0; i < R; i++) {
             if (maze[i][0] == 0)
                 maze[i][0] = 1;
 
@@ -31,8 +28,7 @@ public class MazeTest
         }
 
         // Similarly initialize the topmost row
-        for (int i =1 ; i< C ; i++)
-        {
+        for (int i = 1; i < C; i++) {
             if (maze[0][i] == 0)
                 maze[0][i] = 1;
 
@@ -46,10 +42,8 @@ public class MazeTest
         // The only difference is that if a cell
         // is -1, simply ignore it else recursively
         // compute count value maze[i][j]
-        for (int i = 1; i < R; i++)
-        {
-            for (int j = 1; j <C ; j++)
-            {
+        for (int i = 1; i < R; i++) {
+            for (int j = 1; j < C; j++) {
                 // If blockage is found,
                 // ignore this cell
                 if (maze[i][j] == -1)
@@ -76,7 +70,7 @@ public class MazeTest
     }
 
     // Driver code
-    private static void printMatrix(int[][]m, int r, int c) {
+    private static void printMatrix(int[][] m, int r, int c) {
         for (int i = 0; i < r; i++) {
 
             for (int j = 0; j < c; j++) {
@@ -87,14 +81,13 @@ public class MazeTest
         System.out.println();
     }
 
-    public static void main (String[] args)
-    {
+    public static void main(String[] args) {
         int maze[][] = {{0, 0, 0, 0},
                 {0, -1, -1, 0},
                 {-1, 0, 0, 0},
                 {0, 0, 0, 0}};
 
-        System.out.println (countPaths(maze));
+        System.out.println(countPaths(maze));
         System.out.println();
         printMatrix(maze, R, C);
 

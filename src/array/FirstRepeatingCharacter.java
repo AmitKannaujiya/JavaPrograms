@@ -18,16 +18,17 @@ public class FirstRepeatingCharacter {
 
     public int getFirstRepeatingCharacterIndex(String s) {
         int b[] = new int[26];
-        for (char c: s.toCharArray()) {
-            b[c-'a'] += 1;
+        for (char c : s.toCharArray()) {
+            b[c - 'a'] += 1;
         }
         for (int i = 0; i < s.length(); i++) {
-            if(b[s.charAt(i) - 'a'] > 1) {
+            if (b[s.charAt(i) - 'a'] > 1) {
                 return i;
             }
         }
         return -1;
     }
+
     public int getFirstRepeatingCharacterIndexV2(String s) {
         int b[] = new int[26];
 
@@ -35,7 +36,7 @@ public class FirstRepeatingCharacter {
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if(map.containsKey(c)){
+            if (map.containsKey(c)) {
                 return map.get(c);
             } else {
                 map.put(c, i);

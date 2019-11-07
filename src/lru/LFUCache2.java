@@ -14,6 +14,7 @@ public class LFUCache2 {
     HashMap<Integer, Integer> frequncy;
 
     int SIZE;
+
     public LFUCache2(int capacity) {
         this.frequencyMap = new LinkedHashMap<>(capacity);
         this.frequncy = new LinkedHashMap<>();
@@ -22,22 +23,22 @@ public class LFUCache2 {
 
     public int get(int key) {
 
-        if(frequencyMap.containsKey(key)) {
+        if (frequencyMap.containsKey(key)) {
             //incrementF(key);
             return frequencyMap.get(key);
             // increase frequency of element
             // return element
         }
 
-        return  -1;
+        return -1;
 
     }
 
     public void put(int key, int value) {
-        if(SIZE == 0) {
+        if (SIZE == 0) {
             return;
         }
-        if(isFull()&& frequencyMap.get(key)==null) {
+        if (isFull() && frequencyMap.get(key) == null) {
             // Evict element
             // 1 ) Remove LRU element
             //  2 ) if same element is present at multiple places
@@ -45,7 +46,7 @@ public class LFUCache2 {
 
             decrementF(key, value);
 
-        } else if(isFull()) {
+        } else if (isFull()) {
             decrementF(key, value);
         }
         incrementF(key);
@@ -69,9 +70,9 @@ public class LFUCache2 {
 
     private void incrementF(int key) {
         int element = 1;
-        if(frequncy.get(key)!=null) {
+        if (frequncy.get(key) != null) {
             element = frequncy.get(key);
-            frequncy.put(key, (element+1));
+            frequncy.put(key, (element + 1));
             setMinPriority(key);
         } else {
             frequncy.put(key, 1);
@@ -83,8 +84,8 @@ public class LFUCache2 {
 
     private void setMinPriority(int key) {
         int min = Integer.MAX_VALUE;
-        for(Integer i : frequncy.keySet()) {
-            if(frequncy.get(i) < min && i != key) {
+        for (Integer i : frequncy.keySet()) {
+            if (frequncy.get(i) < min && i != key) {
                 min = frequncy.get(i);
                 MINF = i;
             }
@@ -93,8 +94,7 @@ public class LFUCache2 {
     }
 
 
-
     private boolean isFull() {
-        return frequencyMap.size()== SIZE;
+        return frequencyMap.size() == SIZE;
     }
 }

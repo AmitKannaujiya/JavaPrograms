@@ -24,7 +24,7 @@ public class LeftRotationArray {
             array[i] = Integer.parseInt(strs[i]);
         }
         LeftRotationArray obj = new LeftRotationArray();
-        int a[] = new int[]{1,2,3,4,5,6};
+        int a[] = new int[]{1, 2, 3, 4, 5, 6};
         obj.arrayJuggling(a, 2);
         Utills.printArray(a);
     }
@@ -32,26 +32,26 @@ public class LeftRotationArray {
 
     int gcd(int a, int b) {
 
-        if(b == 0) {
+        if (b == 0) {
             return a;
         }
 
-        return gcd(b , a%b);
+        return gcd(b, a % b);
     }
 
     void arrayJuggling(int a[], int d) {
         int n = a.length;
         int gcd = gcd(n, d);
 
-        for (int i=0; i < gcd; i++) {
-            int j=i;
+        for (int i = 0; i < gcd; i++) {
+            int j = i;
             int temp = a[i];
             while (true) {
                 int k = j + d;
-                if (k > n-1) {
+                if (k > n - 1) {
                     k = k - n;
                 }
-                if(k == i) {
+                if (k == i) {
                     break;
                 }
                 a[j] = a[k];

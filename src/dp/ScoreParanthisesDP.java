@@ -1,17 +1,18 @@
 package dp;
 
 import java.util.Stack;
+
 public class ScoreParanthisesDP {
     public static void main(String[] args) {
         System.out.println(scoreParenthises("(()(()))"));
         System.out.println(scoreParenthises("(()()()((())))"));
     }
 
-   static void scoreParenthises1(String s) {
+    static void scoreParenthises1(String s) {
         int[] a = new int[s.length()];
         Stack<Integer> stack = new Stack<Integer>();
         for (int i = 0; i < s.length(); i++) {
-            if(s.charAt(i)==')' ) {
+            if (s.charAt(i) == ')') {
                 int t = stack.pop();
                 a[t] = i;
 
@@ -24,27 +25,27 @@ public class ScoreParanthisesDP {
         }
     }
 
-    static int scoreParenthises (String s) {
+    static int scoreParenthises(String s) {
         int score = 0;
         Stack<Character> stack = new Stack<Character>();
-        for(int i=0; i< s.length(); i++) {
-            if(s.charAt(i) == ')' ) {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ')') {
                 char ch = stack.peek();
-                if(ch == '(') {
+                if (ch == '(') {
                     stack.pop();
-                    stack.push((char )1);
+                    stack.push((char) 1);
                 } else {
-                    int sum =0;
-                    while(!stack.isEmpty() && stack.peek() != '(' ) {
+                    int sum = 0;
+                    while (!stack.isEmpty() && stack.peek() != '(') {
                         int no = stack.pop();
                         sum += no;
                     }
-                    if(stack.peek()=='(') {
+                    if (stack.peek() == '(') {
                         stack.pop();
-                        sum *=2;
-                        stack.push((char)sum);
+                        sum *= 2;
+                        stack.push((char) sum);
                     } else {
-                        stack.push((char)sum);
+                        stack.push((char) sum);
                     }
 
                 }
@@ -53,17 +54,17 @@ public class ScoreParanthisesDP {
                 stack.push(s.charAt(i));
             }
         }
-        if(stack.size() == 1) {
+        if (stack.size() == 1) {
             return stack.pop();
         }
-        while(!stack.isEmpty() && stack.peek() != '(' ) {
+        while (!stack.isEmpty() && stack.peek() != '(') {
             int no = stack.pop();
             score += no;
         }
-        if(!stack.isEmpty() && stack.peek()=='(') {
+        if (!stack.isEmpty() && stack.peek() == '(') {
             stack.pop();
-            score *=2;
+            score *= 2;
         }
-    return score;
+        return score;
     }
 }

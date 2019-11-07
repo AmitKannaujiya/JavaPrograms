@@ -19,18 +19,18 @@ public class LinkListTest {
     public void printList(LinkList linkList) {
         LinkList temp = linkList;
         System.out.println("Printing list");
-        while (temp!=null) {
+        while (temp != null) {
             System.out.println(temp.data);
-            temp=temp.next;
+            temp = temp.next;
         }
     }
 
     public LinkList reverseList(LinkList list) {
-        LinkList current = list, next = list.next,  previous = null;
-        if(current.next==null) {
+        LinkList current = list, next = list.next, previous = null;
+        if (current.next == null) {
             return current;
         }
-        while (current!=null) {
+        while (current != null) {
             next = current.next;
             current.next = previous;
             previous = current;

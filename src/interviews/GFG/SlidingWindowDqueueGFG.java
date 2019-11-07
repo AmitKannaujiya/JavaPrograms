@@ -98,7 +98,7 @@ public class SlidingWindowDqueueGFG {
 
         String line = "19 | 0230070000720281001";
         String fieldDelimeter = "\\|";
-        String [] parts = line.trim().split(fieldDelimeter);
+        String[] parts = line.trim().split(fieldDelimeter);
         System.out.println();
         for (String str : parts) {
             System.out.println(str.trim());

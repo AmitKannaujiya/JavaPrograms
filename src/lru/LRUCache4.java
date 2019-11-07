@@ -9,7 +9,7 @@ import java.util.LinkedHashMap;
  */
 public class LRUCache4 {
     HashMap<Integer, Integer> frequencyMap;
-    ArrayList<Integer> priority ;
+    ArrayList<Integer> priority;
     int index = 0;
 
     int SIZE;
@@ -17,7 +17,7 @@ public class LRUCache4 {
     public LRUCache4(int capacity) {
         this.frequencyMap = new LinkedHashMap<>(capacity);
         //this.frequncy = new LinkedHashMap<>();
-        this.priority =  new ArrayList<>(capacity +1);
+        this.priority = new ArrayList<>(capacity + 1);
         this.SIZE = capacity;
     }
 }

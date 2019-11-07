@@ -17,53 +17,55 @@ public class LargestPalendrom {
             System.out.println(obj.nextPalendrome(x));
         }
     }
-     int nextPalendrome(int x) {
-        int n =  x;
+
+    int nextPalendrome(int x) {
+        int n = x;
         ArrayList<Integer> nos = new ArrayList<>();
         while (n > 0) {
-            nos.add(n%10);
-            n=n/10;
+            nos.add(n % 10);
+            n = n / 10;
         }
         int[] array = new int[nos.size()];
-        for (int i = nos.size()-1 ; i >=0; i--) {
-            array[(nos.size() -1) - i] = nos.get(i);
+        for (int i = nos.size() - 1; i >= 0; i--) {
+            array[(nos.size() - 1) - i] = nos.get(i);
         }
-        int min=1;
+        int min = 1;
         int start = 0;
         int end = nos.size() - 1;
 
         while (start < end) {
-            if(array[start] != array[end]) {
-                if(array[start] > array[end]) {
+            if (array[start] != array[end]) {
+                if (array[start] > array[end]) {
                     array[end] = array[start];
                 } else {
-                    array[start] = array[start] +1;
+                    array[start] = array[start] + 1;
                     array[end] = array[start];
                 }
             }
             start++;
             end--;
         }
-        int neNo= getNo(array);
-        if(neNo > x) {
+        int neNo = getNo(array);
+        if (neNo > x) {
             return neNo;
         }
-        if(nos.size() % 2 == 1 ) {
-            array[start] = array[start] +1;
+        if (nos.size() % 2 == 1) {
+            array[start] = array[start] + 1;
         }
         return getNo(array);
-     }
-     // 11234
-     private int getNo(int [] array) {
-         int no = 0;
-         int factor=10;
-         for (int i = 0; i < array.length ; i++) {
+    }
+
+    // 11234
+    private int getNo(int[] array) {
+        int no = 0;
+        int factor = 10;
+        for (int i = 0; i < array.length; i++) {
 //             if(i > 0) {
 //                 factor = 10;
 //             }
-             no = no * factor + array[i];
-         }
-         return no;
+            no = no * factor + array[i];
+        }
+        return no;
 
-     }
+    }
 }

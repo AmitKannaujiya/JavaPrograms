@@ -6,7 +6,8 @@ import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
  * Created by amit on 26/7/18.
  */
 public class BillPughSingleton {
-    public  BillPughSingleton INSTANCE;
+    public BillPughSingleton INSTANCE;
+
     static class BillPughSingleToneInner {
         public static BillPughSingleton INSTANCE = new BillPughSingleton();
     }

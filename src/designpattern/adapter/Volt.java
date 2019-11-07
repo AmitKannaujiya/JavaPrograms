@@ -31,7 +31,7 @@ public class Volt {
 
     @Override
     public String toString() {
-        return  String.valueOf(volt) + 'V';
+        return String.valueOf(volt) + 'V';
     }
 
     @Override

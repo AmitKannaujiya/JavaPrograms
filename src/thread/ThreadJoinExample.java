@@ -6,9 +6,9 @@ package thread;
 public class ThreadJoinExample {
 
     public static void main(String[] args) {
-        ParallelTask task1 =  new ParallelTask();
-        ParallelTask task2 =  new ParallelTask();
-        ParallelTask task3 =  new ParallelTask();
+        ParallelTask task1 = new ParallelTask();
+        ParallelTask task2 = new ParallelTask();
+        ParallelTask task3 = new ParallelTask();
         Thread T1 = new Thread(task1, "T1");
         Thread T2 = new Thread(task2, "T2");
         Thread T3 = new Thread(task3, "T3");
@@ -22,11 +22,12 @@ public class ThreadJoinExample {
     }
 
     public static class ParallelTask implements Runnable {
-        Thread predecessorThread ;
+        Thread predecessorThread;
+
         @Override
         public void run() {
             System.out.println("Current Thread started : " + Thread.currentThread().getName());
-            if (predecessorThread!=null) {
+            if (predecessorThread != null) {
                 try {
                     predecessorThread.join();
                 } catch (InterruptedException e) {

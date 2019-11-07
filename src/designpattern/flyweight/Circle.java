@@ -11,7 +11,7 @@ public class Circle implements Shape {
 
     Circle(boolean fill) {
         this.fill = fill;
-        System.out.println("Creating Oval object with fill="+ fill);
+        System.out.println("Creating Oval object with fill=" + fill);
         //adding time delay
         try {
             Thread.sleep(2000);
@@ -25,7 +25,7 @@ public class Circle implements Shape {
                      Color color) {
         circle.setColor(color);
         circle.drawOval(x, y, width, height);
-        if(fill){
+        if (fill) {
             circle.fillOval(x, y, width, height);
         }
 

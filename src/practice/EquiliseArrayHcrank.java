@@ -34,29 +34,29 @@ public class EquiliseArrayHcrank {
     static int equalizeArray(int[] arr) {
         int[] count = new int[100];
         for (int i = 0; i < arr.length; i++) {
-            count[arr[i]]+= 1;
+            count[arr[i]] += 1;
         }
         int steps = 0;
         ArrayList<Integer> moreThanOne = new ArrayList<>();
 
         for (int i = 0; i < arr.length; i++) {
-            if(count[arr[i]]== 1) {
+            if (count[arr[i]] == 1) {
                 steps += 1;
-            } else if(count[arr[i]] > 1 && !moreThanOne.contains(count[arr[i]])) {
+            } else if (count[arr[i]] > 1 && !moreThanOne.contains(count[arr[i]])) {
                 moreThanOne.add(count[arr[i]]);
             }
         }
-        if(moreThanOne.size() == 1) {
+        if (moreThanOne.size() == 1) {
             return steps;
         }
-        int Max= 0;
-        for(Integer num: moreThanOne) {
-            if(num > Max) {
+        int Max = 0;
+        for (Integer num : moreThanOne) {
+            if (num > Max) {
                 Max = num;
             }
         }
-        for(Integer num: moreThanOne) {
-            if(num != Max) {
+        for (Integer num : moreThanOne) {
+            if (num != Max) {
                 steps += num;
             }
         }
@@ -69,8 +69,8 @@ public class EquiliseArrayHcrank {
         int[] count = new int[100];
         int max = 0;
         for (int i = 0; i < arr.length; i++) {
-            count[arr[i]]+= 1;
-            if(count[arr[i]] > max) {
+            count[arr[i]] += 1;
+            if (count[arr[i]] > max) {
                 max = count[arr[i]];
             }
         }

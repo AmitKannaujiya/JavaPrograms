@@ -6,10 +6,11 @@ package designpattern.singleton;
 public class ThredsafeLazzyInitilization {
     public static ThredsafeLazzyInitilization INSTANCE;
 
-    private ThredsafeLazzyInitilization() {}
+    private ThredsafeLazzyInitilization() {
+    }
 
     public static synchronized ThredsafeLazzyInitilization getInstance() {
-        if(INSTANCE == null) {
+        if (INSTANCE == null) {
             INSTANCE = new ThredsafeLazzyInitilization();
         }
         return INSTANCE;

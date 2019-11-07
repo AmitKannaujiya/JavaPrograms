@@ -5,7 +5,7 @@ package lru;
  */
 public class LRUCacheTest {
     public static void main(String[] args) {
-        LRUCacheFirst cache = new LRUCacheFirst( 2 /* capacity */ );
+        LRUCacheFirst cache = new LRUCacheFirst(2 /* capacity */);
 
         cache.put(1, 1);
         cache.put(2, 2);

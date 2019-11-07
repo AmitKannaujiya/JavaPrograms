@@ -7,24 +7,25 @@ public class LongestIncreasingSubSequenceAlgoBook {
 
 
     public static void main(String[] args) {
-        int a[] = {-3,2,1,-5, 6,0,2-7,12,2,3};
+        int a[] = {-3, 2, 1, -5, 6, 0, 2 - 7, 12, 2, 3};
 
         LongestIncreasingSubSequenceAlgoBook obj = new LongestIncreasingSubSequenceAlgoBook();
         System.out.println(obj.longestIncreasingSubSequence(a));
         System.out.println(obj.longestIncreasingSubSequenceV2(a));
         System.out.println(obj.longestIncreasingSubSequenceV3(a));
     }
+
     public int longestIncreasingSubSequence(int a[]) {
         int maxSumSoFar = 0;
         int maxSum = 0;
         for (int i = 0; i < a.length; i++) {
-                maxSumSoFar += a[i];
+            maxSumSoFar += a[i];
 
-            if(maxSum < maxSumSoFar) {
+            if (maxSum < maxSumSoFar) {
                 maxSum = maxSumSoFar;
             }
 
-            if(maxSumSoFar< 0) {
+            if (maxSumSoFar < 0) {
                 maxSumSoFar = 0;
             }
         }
@@ -34,13 +35,13 @@ public class LongestIncreasingSubSequenceAlgoBook {
     public int longestIncreasingSubSequenceV2(int a[]) {
         int maxSumSoFar = 0;
         int maxSum = 0;
-        int si=0, ei=0, st= 0;
+        int si = 0, ei = 0, st = 0;
         for (int i = 0; i < a.length; i++) {
             maxSumSoFar += a[i];
-            if(maxSumSoFar< 0) {
+            if (maxSumSoFar < 0) {
                 maxSumSoFar = 0;
-                st = i+1;
-            } else if(maxSum < maxSumSoFar) {
+                st = i + 1;
+            } else if (maxSum < maxSumSoFar) {
                 maxSum = maxSumSoFar;
                 si = st;
                 ei = i;
@@ -55,8 +56,8 @@ public class LongestIncreasingSubSequenceAlgoBook {
         int currentMax = a[0];
         int maxSum = a[0];
         for (int i = 1; i < a.length; i++) {
-            currentMax = Math.max(a[i], currentMax+a[i]);
-            maxSum=Math.max(currentMax, maxSum);
+            currentMax = Math.max(a[i], currentMax + a[i]);
+            maxSum = Math.max(currentMax, maxSum);
         }
         return maxSum;
     }

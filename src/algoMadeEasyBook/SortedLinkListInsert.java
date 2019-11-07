@@ -7,11 +7,14 @@ public class SortedLinkListInsert {
     Node head; // head of list
 
     /* Linked list Node*/
-    class Node
-    {
+    class Node {
         int data;
         Node next;
-        Node(int d) {data = d; next = null; }
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
     }
 
     /* function to insert a new_node in a list. */
@@ -29,7 +32,7 @@ public class SortedLinkListInsert {
                 prev = current;
                 current = current.next;
             } else {
-               break;
+                break;
             }
 
         }
@@ -65,26 +68,22 @@ public class SortedLinkListInsert {
     /*Utility functions*/
 
     /* Function to create a node */
-    Node newNode(int data)
-    {
+    Node newNode(int data) {
         Node x = new Node(data);
         return x;
     }
 
     /* Function to print linked list */
-    void printList()
-    {
+    void printList() {
         Node temp = head;
-        while (temp != null)
-        {
-            System.out.print(temp.data+" ");
+        while (temp != null) {
+            System.out.print(temp.data + " ");
             temp = temp.next;
         }
     }
 
     /* Driver function to test above methods */
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         SortedLinkListInsert llist = new SortedLinkListInsert();
         Node new_node;
         new_node = llist.newNode(5);

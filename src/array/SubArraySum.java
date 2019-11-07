@@ -15,14 +15,14 @@ public class SubArraySum {
     private static void subArraySum1(int[] arr, int n, int sum) {
         int currentSum = 0;
         int start = 0;
-        for (int i = 0; i <n; i++) {
+        for (int i = 0; i < n; i++) {
             currentSum += arr[i];
 
             while (currentSum > sum && start <= i) {
                 currentSum -= arr[start++];
             }
-            if(currentSum == sum) {
-                System.out.println("at index i :" +i);
+            if (currentSum == sum) {
+                System.out.println("at index i :" + i);
                 return;
             }
 

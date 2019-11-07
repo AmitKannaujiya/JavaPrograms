@@ -15,8 +15,9 @@ public class DoublyLnkLst {
         this.capacity = capacity;
         map = new HashMap<>();
     }
+
     public int get(int key) {
-        if(map.containsKey(key)) {
+        if (map.containsKey(key)) {
             Link link = map.get(key);
             remove(link);
             setHead(link);
@@ -26,15 +27,15 @@ public class DoublyLnkLst {
         return -1;
     }
 
-    public void put(int key, int value){
+    public void put(int key, int value) {
         if (map.containsKey(key)) {
             Link old = map.get(key);
             old.value = value;
             remove(old);
             setHead(old);
         } else {
-            Link link = new Link(key,value);
-            if(map.size() >= capacity) {
+            Link link = new Link(key, value);
+            if (map.size() >= capacity) {
                 map.remove(end.key);
                 remove(end);
                 setHead(link);
@@ -48,22 +49,23 @@ public class DoublyLnkLst {
     private void setHead(Link link) {
         link.right = head;
         link.left = null;
-        if (head!=null) {
+        if (head != null) {
             head.left = link;
         }
-        head=link;
-        if(end==null){
-            end=head;
+        head = link;
+        if (end == null) {
+            end = head;
         }
     }
+
     private void remove(Link link) {
-        if(link.left!=null) {
+        if (link.left != null) {
             link.left.right = link.right;
-        }else {
+        } else {
             head = link.right;
         }
 
-        if(link.right!=null){
+        if (link.right != null) {
             link.right.left = link.left;
         } else {
             end = link.left;

@@ -17,25 +17,25 @@ public class LongestAlternatSubSeq {
 //    index 5 = 1,
 
     public static void main(String[] args) {
-        int a[] = { -5, -1, -1, 2, -2, -3 };
+        int a[] = {-5, -1, -1, 2, -2, -3};
         int n = 6;
         longestAlternating(a, n);
     }
 
     private static void longestAlternating(int[] a, int n) {
         int count[] = new int[n];
-        count[n-1] = 1;
-        for (int i = n-2; i >=0; i--) {
-            if(a[i] * a[i+1] < 0) {
+        count[n - 1] = 1;
+        for (int i = n - 2; i >= 0; i--) {
+            if (a[i] * a[i + 1] < 0) {
 
-                count[i] = count[i+1] +1 ;
+                count[i] = count[i + 1] + 1;
             } else {
-                count[i] =1;
+                count[i] = 1;
             }
         }
 
         for (int i : count) {
-          System.out.println(i + " ");
+            System.out.println(i + " ");
         }
     }
 }

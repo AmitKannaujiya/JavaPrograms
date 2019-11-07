@@ -6,13 +6,13 @@ import java.util.Scanner;
  * Created by amit on 2/11/18.
  * test case :
  * 2
- 3
- 1 2 3
- 4
- -1 -2 -3 -4
- Output
- 6
- -1
+ * 3
+ * 1 2 3
+ * 4
+ * -1 -2 -3 -4
+ * Output
+ * 6
+ * -1
  */
 public class kadaneAlgo {
 
@@ -38,17 +38,17 @@ public class kadaneAlgo {
     public int maximumSumArray(int[] array, int size) {
 
         int maximum_sum_so_far = 0;
-        int maximum_sum= Integer.MIN_VALUE;
+        int maximum_sum = Integer.MIN_VALUE;
         for (int i = 0; i < size; i++) {
-            maximum_sum_so_far+= array[i];
+            maximum_sum_so_far += array[i];
 
 
-            if(maximum_sum_so_far > maximum_sum) {
+            if (maximum_sum_so_far > maximum_sum) {
                 maximum_sum = maximum_sum_so_far;
             }
 
-            if (maximum_sum_so_far<0)
-                maximum_sum_so_far =0;
+            if (maximum_sum_so_far < 0)
+                maximum_sum_so_far = 0;
 
         }
         return maximum_sum;
@@ -56,10 +56,10 @@ public class kadaneAlgo {
 
     public int maximumSumArray2(int[] array, int size) {
         int maximum_sum_so_far = array[0];
-        int maximum_sum= Integer.MIN_VALUE;
+        int maximum_sum = Integer.MIN_VALUE;
 
         for (int i = 1; i < size; i++) {
-            maximum_sum_so_far = Math.max(array[i], maximum_sum_so_far+ array[i]);
+            maximum_sum_so_far = Math.max(array[i], maximum_sum_so_far + array[i]);
             maximum_sum = Math.max(maximum_sum_so_far, maximum_sum);
         }
         return maximum_sum;

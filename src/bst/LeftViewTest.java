@@ -14,25 +14,26 @@ public class LeftViewTest {
         root.right.left = new BST<>(6);
         root.right.right = new BST<>(7);
         root.left.left.left = new BST<>(8);
-        root.left.left.right =  new BST<>(9);
+        root.left.left.right = new BST<>(9);
         root.left.right.left = new BST<>(10);
         root.left.right.right = new BST<>(11);
         LeftViewTest obj = new LeftViewTest();
         obj.leftView(root);
-        int x= 12;
-        System.out.println(x& x-1);
+        int x = 12;
+        System.out.println(x & x - 1);
 
     }
+
     void leftViewUtills(BST<Integer> tree, int level, int maxLevel) {
-        if(tree==null) {
+        if (tree == null) {
             return;
         }
-        if(maxLevel < level) {
+        if (maxLevel < level) {
             System.out.println("Node : " + tree.data + " level : " + level);
             maxLevel = level;
         }
-        leftViewUtills(tree.left, level +1, maxLevel);
-        leftViewUtills(tree.right, level +1, maxLevel);
+        leftViewUtills(tree.left, level + 1, maxLevel);
+        leftViewUtills(tree.right, level + 1, maxLevel);
     }
 
     void leftView(BST<Integer> tree) {

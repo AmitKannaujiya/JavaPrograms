@@ -7,12 +7,12 @@ public class NotThreadSafeTest {
     StringBuilder sb = new StringBuilder();
 
     public String add(String text) {
-       return this.sb.append(text).toString();
+        return this.sb.append(text).toString();
     }
 
 
     public static void main(String[] args) {
-        NotThreadSafeTest notThreadSafe =  new NotThreadSafeTest();
+        NotThreadSafeTest notThreadSafe = new NotThreadSafeTest();
         notThreadSafe.startThread(notThreadSafe);
     }
 
@@ -27,9 +27,11 @@ public class NotThreadSafeTest {
 
     class MyRunnable implements Runnable {
         NotThreadSafeTest obj;
+
         MyRunnable(NotThreadSafeTest obj) {
             this.obj = obj;
         }
+
         @Override
         public void run() {
             System.out.println(Thread.currentThread().getName() + " => " + this.obj.add("This is text \n"));

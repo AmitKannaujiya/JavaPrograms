@@ -1,9 +1,11 @@
 package dp;
 
 import java.util.ArrayList;
+
 class Item {
     int weight;
     int value;
+
     public Item(int weight, int value) {
         this.weight = weight;
         this.value = value;
@@ -48,22 +50,22 @@ public class Knapsack01 {
 //        }
 //        return cache[maxSum];
 //    }
-    public static int knapsackUtills(int maxsum,ArrayList<Item> items) {
-        int[][] cache = new int[items.size()+1][maxsum+1];
+    public static int knapsackUtills(int maxsum, ArrayList<Item> items) {
+        int[][] cache = new int[items.size() + 1][maxsum + 1];
 
-        for (int i=1; i<=items.size(); i++) {
-            for (int j=0; j<=maxsum; j++) {
-                Item item = items.get(i-1);
-                if (j-item.weight >=0) {
-                    cache[i][j] = Math.max(cache[i-1][j-item.weight] + item.value, cache[i-1][j]);
+        for (int i = 1; i <= items.size(); i++) {
+            for (int j = 0; j <= maxsum; j++) {
+                Item item = items.get(i - 1);
+                if (j - item.weight >= 0) {
+                    cache[i][j] = Math.max(cache[i - 1][j - item.weight] + item.value, cache[i - 1][j]);
                 } else {
-                    cache[i][j] = cache[i-1][j];
+                    cache[i][j] = cache[i - 1][j];
                 }
             }
         }
-        for (int i=0; i<=items.size(); i++) {
-            for (int j=0; j<=maxsum; j++) {
-                System.out.print(cache[i][j]+" ");
+        for (int i = 0; i <= items.size(); i++) {
+            for (int j = 0; j <= maxsum; j++) {
+                System.out.print(cache[i][j] + " ");
             }
             System.out.println();
         }

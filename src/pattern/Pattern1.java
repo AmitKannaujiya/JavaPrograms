@@ -30,16 +30,16 @@ public class Pattern1 {
 //        return "";
 //    }
 
-    public static String foo(){
+    public static String foo() {
         System.out.println("Test foo called");
         return "";
     }
 
     private void printPattern(int size) {
-        for (int i = size; i >0; i--) {
-            for (int j = size; j>0; j--) {
+        for (int i = size; i > 0; i--) {
+            for (int j = size; j > 0; j--) {
                 for (int k = i; k > 0; k--) {
-                    System.out.print(j +" ");
+                    System.out.print(j + " ");
                 }
             }
             System.out.println();

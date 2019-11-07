@@ -18,12 +18,12 @@ public class InsertInBSTTusharRoy {
         root.right.left = new BST<>(13);
         root.right.right = null;
         root.left.left.left = null;
-        root.left.left.right =  new BST<>(4);
+        root.left.left.right = new BST<>(4);
         root.left.right.left = null;
         root.left.right.right = new BST<>(9);
 
         root.right.left.left = null;
-        root.right.left.right =  new BST<>(14);
+        root.right.left.right = new BST<>(14);
 
         InsertInBSTTusharRoy obj = new InsertInBSTTusharRoy();
         //obj.insertIntoBinaryTree(root, 6);
@@ -50,29 +50,27 @@ public class InsertInBSTTusharRoy {
     public BST<Integer> insertIntoBinaryTree(BST<Integer> root, int data) {
 
         BST<Integer> node = new BST<>(data);
-        if(root==null) {
+        if (root == null) {
             return node;
         }
         BST<Integer> current = root;
         BST<Integer> parent = null;
-        while (current!=null) {
+        while (current != null) {
             parent = current;
-            if(current.data > data) {
+            if (current.data > data) {
                 current = current.left;
             } else {
                 current = current.right;
             }
         }
-        if(parent.data > data) {
-            parent.left=node;
+        if (parent.data > data) {
+            parent.left = node;
         } else {
             parent.right = node;
         }
 
         return parent;
     }
-
-
 
 
 }

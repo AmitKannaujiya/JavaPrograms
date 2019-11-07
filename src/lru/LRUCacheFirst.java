@@ -19,12 +19,12 @@ public class LRUCacheFirst {
 
     public int get(int key) {
         Node node = doublyLinkList.find(key);
-        if(node!=null) {
-            if(hashMap.containsKey(node)) {
+        if (node != null) {
+            if (hashMap.containsKey(node)) {
                 System.out.println(hashMap.get(node));
                 return hashMap.get(node);
             } else {
-                System.out.println("Error for Key : "+ key);
+                System.out.println("Error for Key : " + key);
             }
         }
         return -1;
@@ -37,17 +37,14 @@ public class LRUCacheFirst {
         // insert at the front of LinkList
         // update has map to store address of list against the key
         Node node = doublyLinkList.insert(key);
-        if(node!=null) {
+        if (node != null) {
             hashMap.put(node, value);
             System.out.println(hashMap.get(node));
         } else {
-            System.out.println("Error Not save key : "+ key);
+            System.out.println("Error Not save key : " + key);
         }
 
     }
-
-
-
 
 
 }

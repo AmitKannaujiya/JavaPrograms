@@ -12,19 +12,19 @@ public class CheckRotatedString {
     }
 
     static boolean checkRotatedString(String s1, String s2) {
-        if(s1.length()!=s2.length()){
+        if (s1.length() != s2.length()) {
             return false;
         }
-        String p= s1+s1;
-        int j=0;
+        String p = s1 + s1;
+        int j = 0;
         for (int i = 0; i < p.length(); i++) {
 
-            if(p.charAt(i)==s2.charAt(j)) {
+            if (p.charAt(i) == s2.charAt(j)) {
                 j++;
-            }else {
-                j=0;
+            } else {
+                j = 0;
             }
-            if(j== s2.length()) {
+            if (j == s2.length()) {
                 return true;
             }
         }

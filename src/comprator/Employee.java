@@ -5,7 +5,7 @@ import java.util.Comparator;
 /**
  * Created by amit on 24/10/18.
  */
-public class Employee  {
+public class Employee {
 
     String name;
     int age;

@@ -39,6 +39,6 @@ public class Candidate {
 
     @Override
     public String toString() {
-        return "ID : " + getId() + " NAME : " + getName() +" VOTES: " +getVotes() ;
+        return "ID : " + getId() + " NAME : " + getName() + " VOTES: " + getVotes();
     }
 }

@@ -4,6 +4,7 @@
 class Person {
 
     String name;
+
     public Person(String name) {
         this.name = name;
     }
@@ -17,14 +18,15 @@ class Person {
 class Student extends Person {
 
     String age;
+
     public Student(String age) {
         super("Ram");
-        this.age =age;
+        this.age = age;
     }
 
     @Override
     public String toString() {
-       return  "Name: " + this.getName() + " Age :" +this.age;
+        return "Name: " + this.getName() + " Age :" + this.age;
     }
 }
 

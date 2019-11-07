@@ -6,9 +6,11 @@ package designpattern.singleton;
 public class LazzyInitilization {
     public static LazzyInitilization INSTANCE;
 
-    private LazzyInitilization(){}
+    private LazzyInitilization() {
+    }
+
     public static LazzyInitilization getInstance() {
-        if(INSTANCE == null) {
+        if (INSTANCE == null) {
             INSTANCE = new LazzyInitilization();
         }
         return INSTANCE;

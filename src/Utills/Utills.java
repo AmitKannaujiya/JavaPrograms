@@ -8,7 +8,7 @@ import java.util.Iterator;
 /**
  * Created by amit on 14/7/18.
  */
-public class Utills{
+public class Utills {
 
     public static int maxElementOfArray(int a[]) {
         int max = Integer.MIN_VALUE;
@@ -44,19 +44,19 @@ public class Utills{
         return isBSTUtills(root.left, minValue, root.data - 1) && isBSTUtills(root.right, root.data + 1, maxValue);
     }
 
-    public static boolean isSameBSTTree(BST<Integer> root1 , BST<Integer> root2) {
-        if(root1 == null && root2 == null) {
+    public static boolean isSameBSTTree(BST<Integer> root1, BST<Integer> root2) {
+        if (root1 == null && root2 == null) {
             return true;
         }
-        if(root1 == null || root2 == null) {
+        if (root1 == null || root2 == null) {
             return false;
         }
 
-        return root1.data== root2.data && isSameBSTTree(root1.left, root2.left) && isSameBSTTree(root1.right, root2.right);
+        return root1.data == root2.data && isSameBSTTree(root1.left, root2.left) && isSameBSTTree(root1.right, root2.right);
     }
 
-    public  static int sizeOfTree(BST<Integer> root) {
-        if(root == null) {
+    public static int sizeOfTree(BST<Integer> root) {
+        if (root == null) {
             return 0;
         }
         int left = sizeOfTree(root.left);
@@ -65,8 +65,8 @@ public class Utills{
     }
 
     public static void printArray(int a[]) {
-        for (int i: a){
-            System.out.print(i +", ");
+        for (int i : a) {
+            System.out.print(i + ", ");
         }
         System.out.println();
     }
@@ -82,9 +82,9 @@ public class Utills{
 
     public static double getMedian(int a[]) {
         int len = a.length;
-        if(len %2 ==0) {
-            return (a[len/2]+a[len/2-1])/2.0;
+        if (len % 2 == 0) {
+            return (a[len / 2] + a[len / 2 - 1]) / 2.0;
         }
-        return a[len/2];
+        return a[len / 2];
     }
 }

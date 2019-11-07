@@ -9,9 +9,7 @@ public class SlidingWindowGFG {
 
     // every k size sub-array
 
-    static void print_max(int a[], int n, int k)
-
-    {
+    static void print_max(int a[], int n, int k) {
 
         // max_upto array stores the index
 
@@ -20,9 +18,7 @@ public class SlidingWindowGFG {
         // i.e. max(a[i], a[i + 1], ... a[max_upto[i]]) = a[i]
 
 
-
         int[] max_upto = new int[n];
-
 
 
         // Update max_upto array similar to
@@ -33,13 +29,9 @@ public class SlidingWindowGFG {
 
         s.push(0);
 
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i < n; i++) {
 
-        {
-
-            while (!s.empty() && a[s.peek()] < a[i])
-
-            {
+            while (!s.empty() && a[s.peek()] < a[i]) {
 
                 max_upto[s.peek()] = i - 1;
 
@@ -51,9 +43,7 @@ public class SlidingWindowGFG {
 
         }
 
-        while (!s.empty())
-
-        {
+        while (!s.empty()) {
 
             max_upto[s.peek()] = n - 1;
 
@@ -63,19 +53,14 @@ public class SlidingWindowGFG {
 
         int j = 0;
 
-        for (int i = 0; i <= n - k; i++)
-
-        {
-
+        for (int i = 0; i <= n - k; i++) {
 
 
             // j < i is to check whether the
 
             // jth element is outside the window
 
-            while (j < i || max_upto[j] < i + k - 1)
-
-            {
+            while (j < i || max_upto[j] < i + k - 1) {
 
                 j++;
 
@@ -90,12 +75,9 @@ public class SlidingWindowGFG {
     }
 
 
-
     // Driver code
 
-    public static void main(String[] args)
-
-    {
+    public static void main(String[] args) {
 
         int a[] = {9, 7, 2, 4, 6, 8, 2, 1, 5};
 
@@ -104,7 +86,6 @@ public class SlidingWindowGFG {
         int k = 3;
 
         print_max(a, n, k);
-
 
 
     }

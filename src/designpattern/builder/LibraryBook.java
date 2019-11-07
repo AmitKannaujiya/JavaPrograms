@@ -7,7 +7,9 @@ public class LibraryBook {
 
     enum BookType {
         FRICTION, ROMANCE
-    };
+    }
+
+    ;
 
     public static class Builder {
         BookType bookType = BookType.FRICTION;

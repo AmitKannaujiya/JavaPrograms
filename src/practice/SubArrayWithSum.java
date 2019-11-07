@@ -29,7 +29,7 @@ public class SubArrayWithSum {
             int max = Integer.MIN_VALUE;
             for (int i = 0; i < size; i++) {
                 array[i] = scanner.nextInt();
-                if(array[i] > max) {
+                if (array[i] > max) {
                     max = array[i];
                 }
             }
@@ -42,14 +42,14 @@ public class SubArrayWithSum {
 //            System.out.print(o[0] + " " + o[1]);
     }
 
-    public int [] subArraySum(int a[], int size, int sum, int max) {
-        boolean [] map = new boolean[max+1];
-        int [] output = new int[2];
+    public int[] subArraySum(int a[], int size, int sum, int max) {
+        boolean[] map = new boolean[max + 1];
+        int[] output = new int[2];
         for (int i = 0; i < size; i++) {
             int temp = sum - a[i];
-            if(temp < 0 || temp > max)
+            if (temp < 0 || temp > max)
                 continue;
-            if(map[temp] == false) {
+            if (map[temp] == false) {
                 map[a[i]] = true;
             } else {
                 output[0] = a[i];

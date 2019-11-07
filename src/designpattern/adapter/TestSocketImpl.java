@@ -21,16 +21,16 @@ public class TestSocketImpl {
 
     }
 
-    public  static String getVolt(VoltEnum voltEnum, SocketAdapter adapter) {
+    public static String getVolt(VoltEnum voltEnum, SocketAdapter adapter) {
         switch (voltEnum) {
             case VoltEnum_3_VOLT:
-              return adapter.get3Volt().toString();
+                return adapter.get3Volt().toString();
             case VoltEnum_12_VOLT:
                 return adapter.get12Volt().toString();
             case VoltEnum_120_VOLT:
                 return adapter.get120Volt().toString();
             default:
-                return  adapter.get120Volt().toString();
+                return adapter.get120Volt().toString();
         }
     }
 }

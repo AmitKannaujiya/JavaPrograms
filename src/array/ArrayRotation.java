@@ -7,11 +7,11 @@ public class ArrayRotation {
 
     public static void main(String[] args) {
 
-        int a [] = {1,2,3,4,5,6,7,8,9,10,11,12};
+        int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
         int d = 3;
 
-        ArrayRotation arrayRotation =  new ArrayRotation();
-        a = arrayRotation.rotationArray(a,  d, a.length);
+        ArrayRotation arrayRotation = new ArrayRotation();
+        a = arrayRotation.rotationArray(a, d, a.length);
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
@@ -30,7 +30,7 @@ public class ArrayRotation {
                 if (k >= n)
                     k = k - n;
 
-                if(k==i)
+                if (k == i)
                     break;
 
                 a[j] = a[k];
@@ -45,8 +45,8 @@ public class ArrayRotation {
 
 
     public int gcd(int a, int b) {
-        if(b == 0)
+        if (b == 0)
             return a;
-        return gcd(b, b%a);
+        return gcd(b, b % a);
     }
 }

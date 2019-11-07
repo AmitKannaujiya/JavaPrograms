@@ -5,7 +5,7 @@ import LinkList.LinkList;
 public class LinkedListPractise {
 
     public static void main(String[] args) {
-        LinkList first =new LinkList(2);
+        LinkList first = new LinkList(2);
         first.next = new LinkList(3);
         first.next.next = new LinkList(4);
 
@@ -15,10 +15,9 @@ public class LinkedListPractise {
         first.next.next.next = third;
         first.next.next.next.next = new LinkList(6);
         first.next.next.next.next.next = new LinkList(7);
-        printIntersectionOfLinkedList(first,second);
+        printIntersectionOfLinkedList(first, second);
 
     }
-
 
 
     private static void printIntersectionOfLinkedList(LinkList first, LinkList second) {
@@ -26,7 +25,7 @@ public class LinkedListPractise {
         int sSize = second.length();
         LinkList largest, smalest = null;
         int count = 0;
-        if(fSize > sSize) {
+        if (fSize > sSize) {
             largest = first;
             smalest = second;
             count = fSize - sSize;
@@ -37,12 +36,12 @@ public class LinkedListPractise {
         }
         while (count > 0) {
             largest = largest.next;
-            count --;
+            count--;
         }
-        while (largest.next != null && smalest.next!=null ) {
+        while (largest.next != null && smalest.next != null) {
             largest = largest.next;
-            smalest =smalest.next;
-            if(largest== smalest ){
+            smalest = smalest.next;
+            if (largest == smalest) {
                 System.out.println("Comon node :" + largest.data);
                 return;
             }

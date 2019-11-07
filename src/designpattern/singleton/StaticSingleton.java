@@ -5,7 +5,9 @@ package designpattern.singleton;
  */
 public class StaticSingleton {
     private static StaticSingleton INSTANCE;
-    private StaticSingleton() {}
+
+    private StaticSingleton() {
+    }
 
     static {
         try {
@@ -14,7 +16,9 @@ public class StaticSingleton {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    };
+    }
+
+    ;
 
     public static StaticSingleton getInstance() {
         return INSTANCE;

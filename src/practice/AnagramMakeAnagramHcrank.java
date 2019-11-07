@@ -30,7 +30,7 @@ public class AnagramMakeAnagramHcrank {
         // to read multiple integers line
         String line = br.readLine();
         String[] strs = line.trim().split("\\s+");
-        BigInteger p=new BigInteger("1");
+        BigInteger p = new BigInteger("1");
         for (int i = 0; i < N; i++) {
             array[i] = Integer.parseInt(strs[i]);
             p = p.multiply(new BigInteger(strs[i]));
@@ -41,23 +41,23 @@ public class AnagramMakeAnagramHcrank {
     }
 
     static void checkPadendrom(String s) {
-        int st=0;
-        int en=s.length();
-        if(en == 1) {
+        int st = 0;
+        int en = s.length();
+        if (en == 1) {
             System.out.println("YES");
         }
         en--;
-        while (st<en) {
-            if(s.charAt(st)==s.charAt(en)) {
+        while (st < en) {
+            if (s.charAt(st) == s.charAt(en)) {
                 st++;
                 en--;
             } else {
                 break;
             }
         }
-        if (st>=en) {
+        if (st >= en) {
             System.out.println("YES");
-        }  else {
+        } else {
             System.out.println("NO");
         }
 
@@ -66,12 +66,12 @@ public class AnagramMakeAnagramHcrank {
     private static int countDifference(String a, String b) {
         int[] counting = new int[27];
         for (char c : a.toCharArray()) {
-            counting[c-'a']++;
+            counting[c - 'a']++;
         }
         for (char c : b.toCharArray()) {
-            counting[c-'a']--;
+            counting[c - 'a']--;
         }
-        int count=0;
+        int count = 0;
         for (int i = 0; i < 27; i++) {
             count += Math.abs(counting[i]);
         }

@@ -17,6 +17,7 @@ public class LFUCache {
     HashMap<Integer, Integer> frequncy;
 
     int SIZE;
+
     public LFUCache(int capacity) {
         this.frequencyMap = new LinkedHashMap<>(capacity);
         this.frequncy = new LinkedHashMap<>();
@@ -24,7 +25,7 @@ public class LFUCache {
     }
 
     public int get(int key) {
-        if(frequencyMap.containsKey(key)) {
+        if (frequencyMap.containsKey(key)) {
             incrementF(key);
             System.out.println(frequencyMap.get(key));
             return frequencyMap.get(key);
@@ -32,15 +33,15 @@ public class LFUCache {
             // return element
         }
         System.out.println(-1);
-        return  -1;
+        return -1;
 
     }
 
     public void put(int key, int value) {
-        if(SIZE == 0) {
+        if (SIZE == 0) {
             return;
         }
-        if(isFull() && frequencyMap.get(key)==null) {
+        if (isFull() && frequencyMap.get(key) == null) {
             // Evict element
             // 1 ) Remove LRU element
             //  2 ) if same element is present at multiple places
@@ -70,9 +71,9 @@ public class LFUCache {
 
     private void incrementF(int key) {
         int element = 1;
-        if(frequncy.get(key)!=null) {
+        if (frequncy.get(key) != null) {
             element = frequncy.get(key);
-            frequncy.put(key, (element+1));
+            frequncy.put(key, (element + 1));
             setMinPriority(key);
         } else {
             frequncy.put(key, 1);
@@ -84,8 +85,8 @@ public class LFUCache {
 
     private void setMinPriority(int key) {
         int min = Integer.MAX_VALUE;
-        for(Integer i : frequncy.keySet()) {
-            if(frequncy.get(i) < min && i != key) {
+        for (Integer i : frequncy.keySet()) {
+            if (frequncy.get(i) < min && i != key) {
                 System.out.println("set min " + frequncy.get(i));
                 min = frequncy.get(i);
                 MINF = i;
@@ -95,23 +96,21 @@ public class LFUCache {
     }
 
 
-
-
     private boolean isFull() {
-        return frequencyMap.size()== SIZE;
+        return frequencyMap.size() == SIZE;
     }
 
     public static void main(String[] args) {
-        LFUCache cache = new LFUCache( 3 /* capacity */ );
-        cache.put(1,1);
-        cache.put(2,2);
-        cache.put(3,3);
-        cache.put(4,4);
+        LFUCache cache = new LFUCache(3 /* capacity */);
+        cache.put(1, 1);
+        cache.put(2, 2);
+        cache.put(3, 3);
+        cache.put(4, 4);
         cache.get(4);
         cache.get(3);
         cache.get(2);
         cache.get(1);
-        cache.put(5,5);
+        cache.put(5, 5);
         cache.get(1);
         cache.get(2);
         cache.get(3);

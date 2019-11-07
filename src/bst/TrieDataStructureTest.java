@@ -9,9 +9,9 @@ public class TrieDataStructureTest {
     public static void main(String[] args) {
         String keys[] = {"the", "a", "there",
                 "answer", "any", "by",
-                "bye", "their" };
+                "bye", "their"};
         Trie root = new Trie();
-        for (String key:  keys) {
+        for (String key : keys) {
             insertKey(root, key);
         }
 
@@ -49,48 +49,49 @@ public class TrieDataStructureTest {
 
     }
 
-    static  void insertKey(Trie root, String key) {
-        Trie  node = root;
-        for (int i=0; i<key.length(); i++) {
+    static void insertKey(Trie root, String key) {
+        Trie node = root;
+        for (int i = 0; i < key.length(); i++) {
             int index = key.charAt(i) - 'a';
-            if(node.children[index] == null) {
+            if (node.children[index] == null) {
                 node.children[index] = new Trie();
             }
             node = node.children[index];
         }
-        node.isEndOfWord =true;
+        node.isEndOfWord = true;
     }
 
     static boolean searchKey(Trie root, String key) {
         Trie node = root;
         for (int i = 0; i < key.length(); i++) {
             int index = key.charAt(i) - 'a';
-            if(node.children[index] == null) {
+            if (node.children[index] == null) {
                 return false;
             }
             node = node.children[index];
         }
-        return node!=null && node.isEndOfWord==true;
+        return node != null && node.isEndOfWord == true;
     }
 
     static int wordCount(Trie root) {
         int result = 0;
-        if(root.isEndOfWord) {
+        if (root.isEndOfWord) {
             result++;
         }
         for (int i = 0; i < Trie.ALPHABET_SIZE; i++) {
-            if(root.children[i] !=null) {
+            if (root.children[i] != null) {
                 result += wordCount(root.children[i]);
             }
         }
         return result;
     }
+
     static ArrayList<String> displayAllWords(Trie root) {
-        ArrayList<String> arrayList =new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
         int level = 0;
         for (int i = 0; i < Trie.ALPHABET_SIZE; i++) {
-            if(root.children[i] !=null) {
-                char ch = (char) (i+'a');
+            if (root.children[i] != null) {
+                char ch = (char) (i + 'a');
                 displayAllWords(root.children[i], arrayList, new StringBuilder(ch));
             }
         }
@@ -98,22 +99,22 @@ public class TrieDataStructureTest {
     }
 
     static void displayAllWords(Trie root, ArrayList<String> arrayList, StringBuilder sb) {
-        if(root.isEndOfWord) {
+        if (root.isEndOfWord) {
             arrayList.add(sb.toString());
         }
         for (int i = 0; i < Trie.ALPHABET_SIZE; i++) {
-            if(root.children[i] !=null) {
-                char ch = (char) (i+'a');
+            if (root.children[i] != null) {
+                char ch = (char) (i + 'a');
                 displayAllWords(root.children[i], arrayList, sb.append(ch));
             }
         }
     }
 
     static ArrayList<String> getSearchSuggetions(Trie root, String key, ArrayList<String> arrayList, String data) {
-        if(key.isEmpty()) {
+        if (key.isEmpty()) {
             return null;
         }
-        if(arrayList == null ) {
+        if (arrayList == null) {
             arrayList = new ArrayList<>();
         }
 
@@ -143,46 +144,45 @@ public class TrieDataStructureTest {
 //     }
 
     static ArrayList<String> getSearchSuggestions(Trie root, String key) {
-        if(key.isEmpty()) {
+        if (key.isEmpty()) {
             return null;
         }
         Trie node = root;
 
         for (int i = 0; i < key.length(); i++) {
             int index = key.charAt(i) - 'a';
-            if(node.children[index] !=null ) {
+            if (node.children[index] != null) {
                 node = node.children[index];
             } else {
                 return null;
             }
         }
 
-       return getSuggestion(node, key, null);
+        return getSuggestion(node, key, null);
 
     }
 
     static ArrayList<String> getSuggestion(Trie node, String stringTillNow, ArrayList<String> arrayList) {
 
-        if(arrayList == null ) {
+        if (arrayList == null) {
             arrayList = new ArrayList<>();
         }
-        if(node.isEndOfWord) {
+        if (node.isEndOfWord) {
             arrayList.add(stringTillNow);
         }
-        if(node==null) {
+        if (node == null) {
             return null;
         }
 
         for (int i = 0; i < Trie.ALPHABET_SIZE; i++) {
             int index = i + 'a';
             Trie[] children = node.children;
-            if(children[i] != null) {
-                getSuggestion(node.children[i], stringTillNow+(char) index, arrayList);
+            if (children[i] != null) {
+                getSuggestion(node.children[i], stringTillNow + (char) index, arrayList);
             }
         }
         return arrayList;
     }
-
 
 
 //    static int wordCount1(Trie trie ) {

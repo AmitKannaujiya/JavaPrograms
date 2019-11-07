@@ -6,7 +6,7 @@ package array;
 public class Sort01Arrays {
 
     public static void main(String[] args) {
-        int[] a = {1,0,1,0,1,0,0,1,0};
+        int[] a = {1, 0, 1, 0, 1, 0, 0, 1, 0};
         Sort01Arrays obj = new Sort01Arrays();
         obj.sort01Array(a);
         for (int i = 0; i < a.length; i++) {
@@ -17,7 +17,8 @@ public class Sort01Arrays {
     }
 
     public void sort01Array(int a[]) {
-        int start = 0; int end= a.length-1;
+        int start = 0;
+        int end = a.length - 1;
         while (start < end) {
             while (a[start] == 0) {
                 start++;
@@ -25,7 +26,7 @@ public class Sort01Arrays {
             while (a[end] == 1) {
                 end--;
             }
-            if(start < end) {
+            if (start < end) {
                 swap(a, start, end);
             }
         }
@@ -34,6 +35,6 @@ public class Sort01Arrays {
     public void swap(int a[], int i, int j) {
         int temp = a[i];
         a[i] = a[j];
-        a[j]= temp;
+        a[j] = temp;
     }
 }

@@ -20,12 +20,12 @@ public class CustomMap<K, V> {
         Entry<K, V> entry = new Entry<>(key, value, null);
         int bucket = entry.hashCode() % INITIAL_CAPACITY;
         Entry<K, V> existing = buckets[bucket];
-        if(existing == null) {
+        if (existing == null) {
             buckets[bucket] = entry;
             size++;
         } else {
-            while (existing.next!=null) {
-                if(existing.key.equals(key)) {
+            while (existing.next != null) {
+                if (existing.key.equals(key)) {
                     existing.value = value;
                     size++;
                     return;
@@ -33,7 +33,7 @@ public class CustomMap<K, V> {
                 existing = existing.next;
             }
 
-            if(existing.key.equals(key)) {
+            if (existing.key.equals(key)) {
                 existing.value = value;
                 size++;
             } else {
@@ -45,8 +45,8 @@ public class CustomMap<K, V> {
     public V get(K key) {
         Entry<K, V> entry = new Entry<>(key, null, null);
         Entry<K, V> bucket = buckets[entry.hashCode() % INITIAL_CAPACITY];
-        while (bucket!=null) {
-            if(bucket.key.equals(key)) {
+        while (bucket != null) {
+            if (bucket.key.equals(key)) {
                 return bucket.value;
             }
             bucket = bucket.next;
@@ -58,8 +58,8 @@ public class CustomMap<K, V> {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("[ ");
-        for (Entry entry: buckets) {
-            if(entry!=null) {
+        for (Entry entry : buckets) {
+            if (entry != null) {
                 stringBuilder.append(entry.toString()).append(", ");
             }
         }
@@ -73,11 +73,13 @@ class Entry<K, V> {
     V value;
 
     Entry<K, V> next;
+
     public Entry(K key, V value, Entry<K, V> next) {
         this.key = key;
         this.value = value;
         this.next = next;
     }
+
     @Override
     public int hashCode() {
 //        if (key instanceof String) {
@@ -88,7 +90,7 @@ class Entry<K, V> {
 //            return  Math.round(((Float) key) % INITIAL_CAPACITY);
 //        }
 //        return INITIAL_CAPACITY -1;
-        return key!=null ? key.hashCode() : INITIAL_CAPACITY-1;
+        return key != null ? key.hashCode() : INITIAL_CAPACITY - 1;
     }
 
     @Override

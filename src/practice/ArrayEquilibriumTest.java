@@ -6,17 +6,17 @@ import java.io.InputStreamReader;
 
 /**
  * Created by amit on 3/11/18.
-
-// 3
-// 17
-// 27 4 25 6 6 1 27 22 19 29 6 9 36 24 6 15 5
-// 8
-// 43 34 2 8 17 5 11 8
-// 30
-// 20 17 42 25 32 32 30 32 37 9 2 33 31 17 14 40 9 12 36 21 8 33 6 6 10 37 12 26 21 3
- 1
- 30
- 20 17 42 25 32 32 30 32 37 9 2 33 31 17 14 40 9 12 36 21 8 33 6 6 10 37 12 26 21 3
+ * <p>
+ * // 3
+ * // 17
+ * // 27 4 25 6 6 1 27 22 19 29 6 9 36 24 6 15 5
+ * // 8
+ * // 43 34 2 8 17 5 11 8
+ * // 30
+ * // 20 17 42 25 32 32 30 32 37 9 2 33 31 17 14 40 9 12 36 21 8 33 6 6 10 37 12 26 21 3
+ * 1
+ * 30
+ * 20 17 42 25 32 32 30 32 37 9 2 33 31 17 14 40 9 12 36 21 8 33 6 6 10 37 12 26 21 3
  */
 public class ArrayEquilibriumTest {
     public static void main(String[] args) throws IOException {
@@ -40,14 +40,14 @@ public class ArrayEquilibriumTest {
     }
 
     public int findEquilibriumPoint(int[] array) {
-        if(array.length == 1) {
+        if (array.length == 1) {
             return array[0];
         }
         int startIndex = 0;
-        int endIndex = array.length -1;
+        int endIndex = array.length - 1;
         int leftSum = 0, rightSum = 0;
 
-        while(startIndex < endIndex ) {
+        while (startIndex < endIndex) {
             if (leftSum < rightSum) {
                 leftSum += array[startIndex++];
             } else {
@@ -56,7 +56,7 @@ public class ArrayEquilibriumTest {
 
         }
 
-        if(leftSum == rightSum && endIndex-startIndex== 0) {
+        if (leftSum == rightSum && endIndex - startIndex == 0) {
             return array[startIndex];
         } else {
             return -1;

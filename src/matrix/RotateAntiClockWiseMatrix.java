@@ -19,31 +19,30 @@ public class RotateAntiClockWiseMatrix {
 
         int mat2[][] = {
 
-                        {1,  2,  3},
-                        {4,  5,  6},
-                        {7,  8,  9}
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
 
         };
 
-        int N2=3;
+        int N2 = 3;
 
         //rotateMatrixClockWise(N,mat);
         //rotateMatrix(N,mat);
-        displayMatrix(N2,mat2);
+        displayMatrix(N2, mat2);
 //        transpose(mat);
 //        reverseColumns(mat);
 
-        rotateMatrix180(mat2, N2-1);
+        rotateMatrix180(mat2, N2 - 1);
 
         // Print rotated matrix
-        displayMatrix(N2,mat2);
+        displayMatrix(N2, mat2);
     }
 
     // After transpose we swap elements of
     // column one by one for finding left
     // rotation of matrix by 90 degree
-    static void reverseColumns(int arr[][])
-    {
+    static void reverseColumns(int arr[][]) {
         for (int i = 0; i < arr[0].length; i++)
             for (int j = 0, k = arr[0].length - 1;
                  j < k; j++, k--) {
@@ -54,8 +53,7 @@ public class RotateAntiClockWiseMatrix {
     }
 
     // Function for do transpose of matrix
-    static void transpose(int arr[][])
-    {
+    static void transpose(int arr[][]) {
         for (int i = 0; i < arr.length; i++)
             for (int j = i; j < arr[0].length; j++) {
                 int temp = arr[j][i];
@@ -64,9 +62,9 @@ public class RotateAntiClockWiseMatrix {
             }
     }
 
-    static void rotateMatrix180(int arr[][],int n) {
+    static void rotateMatrix180(int arr[][], int n) {
 
-        for (int i = 0; i < arr.length /2; i++) {
+        for (int i = 0; i < arr.length / 2; i++) {
             for (int j = 0; j < arr[0].length; j++) {
                 int temp = arr[i][j];
                 arr[i][j] = arr[n - i][n - j];
@@ -76,10 +74,8 @@ public class RotateAntiClockWiseMatrix {
         System.out.println("Here");
     }
 
-    static void displayMatrix(int N, int mat[][])
-    {
-        for (int i = 0; i < N; i++)
-        {
+    static void displayMatrix(int N, int mat[][]) {
+        for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++)
                 System.out.print(" " + mat[i][j]);
 
@@ -87,18 +83,19 @@ public class RotateAntiClockWiseMatrix {
         }
         System.out.print("\n");
     }
-    static void rotateMatrixClockWise(int N, int [][] matrix) {
+
+    static void rotateMatrixClockWise(int N, int[][] matrix) {
         for (int i = 0; i < N / 2; i++) {
-            for (int j = i; j <N-i -1; j++) {
+            for (int j = i; j < N - i - 1; j++) {
                 int temp = matrix[i][j];
                 // left  to top
-                matrix[i][j] = matrix[N-1-j][i];
+                matrix[i][j] = matrix[N - 1 - j][i];
                 // bottom to left
-                matrix[N-1-j][i] = matrix[N-1-i][N-1-j];
+                matrix[N - 1 - j][i] = matrix[N - 1 - i][N - 1 - j];
                 // right to bottom
-                matrix[N-1-i][N-1-j] = matrix[j][N-1-i];
+                matrix[N - 1 - i][N - 1 - j] = matrix[j][N - 1 - i];
 
-                matrix[j][N-1-i] = temp;
+                matrix[j][N - 1 - i] = temp;
 
                 //
 //        int temp = mat[x][y];
@@ -118,7 +115,7 @@ public class RotateAntiClockWiseMatrix {
         }
     }
 
-    static void rotateMatrix(int N, int [][] matrix) {
+    static void rotateMatrix(int N, int[][] matrix) {
 //
 //        int temp = mat[x][y];
 //
@@ -135,17 +132,17 @@ public class RotateAntiClockWiseMatrix {
 //        mat[N-1-y][x] = temp;
 
         for (int i = 0; i < N / 2; i++) {
-            for (int j = i; j <N-i -1; j++) {
+            for (int j = i; j < N - i - 1; j++) {
                 int temp = matrix[i][j];
                 // right to top
-                matrix[i][j] = matrix[j][N-i-1];
+                matrix[i][j] = matrix[j][N - i - 1];
                 //bottom to right
-                matrix[j][N-i-1] = matrix[N-i-1][N-j-1];
+                matrix[j][N - i - 1] = matrix[N - i - 1][N - j - 1];
                 //left to bottom
-                matrix[N-i-1][N-j-1] = matrix[N-1-j][i];
+                matrix[N - i - 1][N - j - 1] = matrix[N - 1 - j][i];
 
                 // top to left
-                matrix[N-1-j][i] = temp;
+                matrix[N - 1 - j][i] = temp;
 
 //                        int temp = matrix[i][j];
 //

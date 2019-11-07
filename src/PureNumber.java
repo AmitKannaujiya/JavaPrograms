@@ -31,10 +31,9 @@ public class PureNumber {
 //    }
 
 
-    static void find(int n)
-    {
+    static void find(int n) {
         // An array of strings to store first n numbers. arr[i] stores i'th number
-        String[] arr = new String[n+1];
+        String[] arr = new String[n + 1];
 
         // arr[0] stores the empty string (String with 0 digits)
         arr[0] = "";
@@ -45,16 +44,15 @@ public class PureNumber {
 
         // Every iteration of following loop generates and adds 2*m numbers to
         // arr[] using the m numbers generated in previous iteration
-        while (size <= n)
-        {
+        while (size <= n) {
             // Consider all numbers added in previous iteration, add a prefix
             // "3" to them and add new numbers to arr[]
-            for (int i=0; i<m && (size+i)<=n; i++)
+            for (int i = 0; i < m && (size + i) <= n; i++)
                 arr[size + i] = "3" + arr[size - m + i];
 
             // Add prefix "4" to numbers of previous iteration and add new
             // numbers to arr[]
-            for (int i=0; i<m && (size + m + i)<=n; i++)
+            for (int i = 0; i < m && (size + m + i) <= n; i++)
                 arr[size + m + i] = "4" + arr[size - m + i];
 
             // Update no. of elements added in previous iteration

@@ -31,7 +31,7 @@ public class SockMerchantHcrank {
     }
 
     private int getMatchingPairs(int[] array, int size) {
-        boolean[] pairedSocks = new boolean[100+1];
+        boolean[] pairedSocks = new boolean[100 + 1];
         int count = 0;
         for (int i = 0; i < size; i++) {
             if (pairedSocks[array[i]]) {

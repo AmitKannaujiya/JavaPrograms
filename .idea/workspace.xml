@@ -5,17 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/MedianOfSortedArray.java" line="69" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc14a7d8-ec36-4ae2-b0e9-82bf266e24f5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SampleJavaProject/MedianOfSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SampleJavaProject/MedianOfSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SampleJavaProject/algoMadeEasyBook/MaxSumPathArrayDP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SampleJavaProject/algoMadeEasyBook/MaxSumPathArrayDP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SampleJavaProject/bst/LevelOrderChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SampleJavaProject/bst/LevelOrderChange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SampleJavaProject/practice/AnagramMakeAnagramHcrank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SampleJavaProject/practice/AnagramMakeAnagramHcrank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MedianOfSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MedianOfSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algoMadeEasyBook/MaxSumPathArrayDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algoMadeEasyBook/MaxSumPathArrayDP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bst/LevelOrderChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bst/LevelOrderChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/AnagramMakeAnagramHcrank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/AnagramMakeAnagramHcrank.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc14a7d8-ec36-4ae2-b0e9-82bf266e24f5" name="Default" comment="" />
     <ignored path="SampleJavaProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -37,27 +27,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/practice/leetcode/MaximumSlidingWindowTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/practice/AnagramMakeAnagramHcrank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="61" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/NumberColored.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="870">
@@ -69,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bst/DiameterOfTree.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -129,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/ArrayPractise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3750">
+            <state relative-caret-position="455">
               <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -137,6 +106,27 @@
                 <element signature="e#3875#3876#0" expanded="true" />
                 <element signature="e#3947#3948#0" expanded="true" />
                 <element signature="e#3975#3976#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/UglyNoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="55" column="29" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/PairElementSumDivisible.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,8 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/interviews/GFG/CastVotesTest.java" />
-        <option value="$PROJECT_DIR$/src/heap/Maxheap.java" />
         <option value="$PROJECT_DIR$/src/backtracking/RateInTheMaze.java" />
         <option value="$PROJECT_DIR$/src/thread/ThreadJoinExample.java" />
         <option value="$PROJECT_DIR$/src/thread/ReentrantlockExample.java" />
@@ -218,6 +206,8 @@
         <option value="$PROJECT_DIR$/src/practice/AnagramMakeAnagramHcrank.java" />
         <option value="$PROJECT_DIR$/src/algoMadeEasyBook/NumberColored.java" />
         <option value="$PROJECT_DIR$/src/bst/DiameterOfTree.java" />
+        <option value="$PROJECT_DIR$/src/algoMadeEasyBook/UglyNoTest.java" />
+        <option value="$PROJECT_DIR$/src/algoMadeEasyBook/PairElementSumDivisible.java" />
       </list>
     </option>
   </component>
@@ -252,19 +242,7 @@
               <item name="SampleJavaProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="SampleJavaProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="bst" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleJavaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleJavaProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleJavaProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleJavaProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Utills" type="462c0819:PsiDirectoryNode" />
+              <item name="algoMadeEasyBook" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DiameterOfTree">
+  <component name="RunManager" selected="Application.UglyNoTest">
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -371,20 +349,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxSumPathArrayDP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algoMadeEasyBook.MaxSumPathArrayDP" />
-      <module name="SampleJavaProject" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algoMadeEasyBook.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MedianOfSortedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MedianOfSortedArray" />
       <module name="SampleJavaProject" />
@@ -414,6 +378,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UglyNoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algoMadeEasyBook.UglyNoTest" />
+      <module name="SampleJavaProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algoMadeEasyBook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -488,18 +466,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.MedianOfSortedArray" />
-      <item itemvalue="Application.MaxSumPathArrayDP" />
       <item itemvalue="Application.ScoreParanthisesDP" />
       <item itemvalue="Application.NumberColored" />
       <item itemvalue="Application.DiameterOfTree" />
+      <item itemvalue="Application.UglyNoTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UglyNoTest" />
         <item itemvalue="Application.DiameterOfTree" />
         <item itemvalue="Application.NumberColored" />
         <item itemvalue="Application.MedianOfSortedArray" />
         <item itemvalue="Application.ScoreParanthisesDP" />
-        <item itemvalue="Application.MaxSumPathArrayDP" />
       </list>
     </recent_temporary>
   </component>
@@ -549,6 +527,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3880478" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -556,7 +535,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32298136" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32298136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.41770187" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -891,23 +870,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ConstructorChaining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/UniqueCharCh1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LinkList/AdditionOfLinkList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
@@ -1309,9 +1271,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bst/DiameterOfTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/ArrayPractise.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3750">
+        <state relative-caret-position="455">
           <caret line="258" column="5" lean-forward="true" selection-start-line="258" selection-start-column="5" selection-end-line="258" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1323,10 +1292,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bst/DiameterOfTree.java">
+    <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/UglyNoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="247">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/PairElementSumDivisible.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@ import Utills.Utills;
 public class FindGap {
 
     public static void main(String[] args) {
-        int a [] = {1, 2, 5, 6, 10};
+        int a[] = {1, 2, 5, 6, 10};
         printGap(a);
 
     }
@@ -17,10 +17,10 @@ public class FindGap {
         int max = maxElementOfArray(a);
         int j = 0;
         for (int i = 0; i < max; i++) {
-            if (a[j]==i) {
+            if (a[j] == i) {
                 j++;
-            } else if(i > 0) {
-                System.out.print(i +", ");
+            } else if (i > 0) {
+                System.out.print(i + ", ");
             }
         }
     }
