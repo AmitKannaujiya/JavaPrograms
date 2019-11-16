@@ -33,7 +33,53 @@ public class CheckForBST {
         root2.left.right = new BST<>(3);
 
         System.out.println("Check If BST Second " + Utills.isBST(root2));
+        BST<Integer> root3 =new BST<>(5);
+        root3.left = new BST<>(1);
+        root3.right = new BST<>(4);
+        root3.right.left=new BST<>(3);
+        root3.right.right = new BST<>(6);
+        System.out.println("Check If BST Second2 " + isBinaryTree(root3));
 
+        root3 =new BST<>(5);
+        root3.left = new BST<>(1);
+        root3.right = new BST<>(6);
+        root3.right.left=new BST<>(4);
+        root3.right.right = new BST<>(7);
+        System.out.println("Check If Second3 " + isBinaryTree(root3));
+
+        root3 =new BST<>(5);
+        root3.left = new BST<>(1);
+        root3.right = new BST<>(6);
+        root3.right.left=new BST<>(7);
+        root3.right.right = new BST<>(8);
+        System.out.println("Check If Second4 " + isBinaryTree(root3));
+
+        root3 =new BST<>(5);
+        root3.left = new BST<>(1);
+        root3.right = new BST<>(7);
+        root3.right.left=new BST<>(6);
+        root3.right.right = new BST<>(8);
+        System.out.println("Check If Second5 " + isBinaryTree(root3));
+    }
+
+   static boolean isBinaryTree(BST<Integer> root) {
+        if(root== null)
+            return true;
+        return isBinaryTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+   static boolean isBinaryTree(BST<Integer> root, int minValue, int maxValue) {
+
+        if(root==null) {
+            return true;
+        }
+
+        if(root.data > maxValue || root.data < minValue) {
+            return false;
+
+        }
+
+        return isBinaryTree(root.left, minValue, root.data-1) && isBinaryTree(root.right, root.data+1, maxValue);
 
     }
 }

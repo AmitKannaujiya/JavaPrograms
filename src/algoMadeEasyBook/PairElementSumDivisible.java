@@ -5,6 +5,8 @@ import java.util.LinkedHashMap;
 
 public class PairElementSumDivisible {
     public static void main(String[] args) {
+        System.out.println(pairElementsSumDvisible(new int[]{9,5,3,1}, 6));
+        System.out.println(pairElementsSumDvisible(new int[]{9,5,3,1}, 6));
 
     }
 
@@ -18,7 +20,7 @@ public class PairElementSumDivisible {
         for (int i = 0; i < a.length; i++) {
             int remainder = a[i] % k;
             if (!rem.containsKey(remainder)) {
-                rem.put(remainder, 0);
+                rem.put(remainder, 1);
             } else {
                 rem.put(remainder, rem.get(remainder) + 1);
             }
@@ -44,13 +46,14 @@ public class PairElementSumDivisible {
                 // remainder and k-remainder should be equal frequency
                 int rest = k - remainder;
                 if (rem.containsKey(rest)) {
-
+                    if (rem.get(rest) != freq) {
+                        return false;
+                    }
                 } else {
                     return false;
                 }
             }
-
-
         }
+        return true;
     }
 }
