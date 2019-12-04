@@ -5,7 +5,10 @@ import java.util.HashMap;
 public class MinPositiveNo {
     public static void main(String[] args) {
         System.out.println(solution(new int[]{1, 3, 6, 4, 1, 2}));
-        System.out.println(new Exception());
+        //System.out.println(new Exception());
+        System.out.println(solution(new int[]{3, 4, -1, 1}));
+        System.out.println(solution(new int[]{1, 0, 2}));
+        System.out.println(solution(new int[]{2, 3, 7, 6, 8, -1, -10, 15}));
 
     }
 
