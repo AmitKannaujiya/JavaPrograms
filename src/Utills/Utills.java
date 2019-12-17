@@ -79,6 +79,14 @@ public class Utills {
             System.out.println(count + ") " + iterator.next());
         }
     }
+    public static void printArrayListInteger(ArrayList<Integer> arrayList) {
+        System.out.println("List Contents : ");
+        Iterator iterator = arrayList.listIterator();
+        int count = 1;
+        while (iterator.hasNext()) {
+            System.out.println(count + ") " + iterator.next());
+        }
+    }
 
     public static double getMedian(int a[]) {
         int len = a.length;
