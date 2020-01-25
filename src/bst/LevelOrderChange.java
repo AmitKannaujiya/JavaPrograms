@@ -51,8 +51,7 @@ public class LevelOrderChange {
 
     public List<List<Integer>> levelOrder(BST<Integer> root) {
         List<List<Integer>> list = new ArrayList<>();
-        HashMap<Integer, List<Integer>> hashMap = new LinkedHashMap<>();
-        Queue<BST> queue = new ArrayDeque<>();
+        Queue<BST> queue = new LinkedList<>();
         if (root == null) {
             return null;
         }
