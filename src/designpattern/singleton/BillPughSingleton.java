@@ -1,6 +1,5 @@
 package designpattern.singleton;
 
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 
 /**
  * Created by amit on 26/7/18.
