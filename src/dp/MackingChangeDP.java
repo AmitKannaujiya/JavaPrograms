@@ -11,6 +11,22 @@ public class MackingChangeDP {
         System.out.println(obj.makeChange1(12));
         System.out.println(obj.makeChangeBU(13));
         System.out.println(obj.makeChangeBUImp(18));
+
+        System.out.println("Total No Of Ways for " + 13 +" => " + obj.totalNoOfWays(13));
+    }
+
+    private int totalNoOfWays(int amount) {
+        int dp[] = new int[amount+1];
+        dp[0] = 1;
+        for (int i =0 ; i< COINS.length; i++) {
+            int coin = COINS[i];
+            for (int j = 1; j <=amount ; j++) {
+                if(j >= coin) {
+                    dp[j] += dp[j-coin];
+                }
+            }
+        }
+        return dp[amount];
     }
 
     int makeChange(int c) {
