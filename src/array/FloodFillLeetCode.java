@@ -8,7 +8,7 @@ public class FloodFillLeetCode {
         int sr = 1;
         int sc = 1;
         int oldColor = 1;
-        obj.dfs(image, sr, sc, image.length-1, image[0].length, newColor, oldColor);
+        obj.dfs(image, sr, sc, image.length-1, image[0].length, 1, oldColor);
     }
     private boolean isValid(int[][] image, int i, int j, int row, int col, int oldColor) {
         if(i < 0 || i > row) {
