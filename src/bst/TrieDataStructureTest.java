@@ -46,6 +46,7 @@ public class TrieDataStructureTest {
 
         TrieDataStructure trieDataStructure = new TrieDataStructure(keys);
         Utills.printArrayList(trieDataStructure.getPrefixSearch("a"));
+        Utills.printArrayList(trieDataStructure.getPrefixSearch("the"));
 
     }
 

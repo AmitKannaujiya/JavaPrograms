@@ -76,7 +76,7 @@ public class Utills {
         Iterator iterator = arrayList.listIterator();
         int count = 1;
         while (iterator.hasNext()) {
-            System.out.println(count + ") " + iterator.next());
+            System.out.println(count++ + ") " + iterator.next());
         }
     }
     public static void printArrayListInteger(ArrayList<Integer> arrayList) {
