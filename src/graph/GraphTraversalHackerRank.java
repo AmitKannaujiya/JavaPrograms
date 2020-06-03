@@ -1,6 +1,8 @@
 package graph;
 
 import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Comparator;
 
 public class GraphTraversalHackerRank {
     public static void main(String[] args) {
@@ -28,6 +30,15 @@ public class GraphTraversalHackerRank {
         for (Integer in : list) {
             System.out.print("->" + in);
         }
+
+        PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
+            
+            @Override
+            public int compare(Integer arg0, Integer arg1) {
+                // TODO Auto-generated method stub
+                return 0;
+            }
+        });
 
     }
 }
