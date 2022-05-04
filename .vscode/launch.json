@@ -1,0 +1,1225 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConstructorChaining",
+            "request": "launch",
+            "mainClass": "ConstructorChaining",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdditionOfLinkList",
+            "request": "launch",
+            "mainClass": "LinkList.AdditionOfLinkList",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkListTest",
+            "request": "launch",
+            "mainClass": "LinkList.LinkListTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MedianOfSortedArray",
+            "request": "launch",
+            "mainClass": "MedianOfSortedArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PureNumber",
+            "request": "launch",
+            "mainClass": "PureNumber",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchInSortedRotated",
+            "request": "launch",
+            "mainClass": "Revision.SearchInSortedRotated",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayPractise",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.ArrayPractise",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch BalancedParathesesScore",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.BalancedParathesesScore",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch BalancedStringGFG",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.BalancedStringGFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch BuySellStock1LeetCode121",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.BuySellStock1LeetCode121",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CDRPair",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.CDRPair",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckBSTFromPreorder",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.CheckBSTFromPreorder",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConstructBSTFromInorder",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.ConstructBSTFromInorder",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConstructBSTFromPreorder",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.ConstructBSTFromPreorder",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertNoTo1DP",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.ConvertNoTo1DP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountNoOf1sLeetCode",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.CountNoOf1sLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DPPractiseCollatz1",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.DPPractiseCollatz1",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch HackerRankEpifiProblem",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.HackerRankEpifiProblem",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch HackerRankSampleTest",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.HackerRankSampleTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntegerPalindrom",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.IntegerPalindrom",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LastStoneLeetCode",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.LastStoneLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedListPractise",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.LinkedListPractise",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSumPathArrayDP",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.MaxSumPathArrayDP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumSumAbsoluteDifference",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.MaximumSumAbsoluteDifference",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinPositiveNo",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.MinPositiveNo",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinimumEnergyRequiredGS",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.MinimumEnergyRequiredGS",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MinimumPathSumArrayDP",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.MinimumPathSumArrayDP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch NexLargestPalendrom",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.NexLargestPalendrom",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberColored",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.NumberColored",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberComplementGFG",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.NumberComplementGFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PairElementSumDivisible",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.PairElementSumDivisible",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrinterOperationDP",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.PrinterOperationDP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProjectEuler",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.ProjectEuler",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecursionChapter",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.RecursionChapter",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveallOccuranceOfPatternInString",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.RemoveallOccuranceOfPatternInString",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RestElementProductArray",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.RestElementProductArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SequencialDigitLeetCode",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.SequencialDigitLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortedLinkListInsert",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.SortedLinkListInsert",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch TappingRainWaterLeetCode",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.TappingRainWaterLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch UglyNoTest",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.UglyNoTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch UniqueCharCh1",
+            "request": "launch",
+            "mainClass": "algoMadeEasyBook.UniqueCharCh1",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnagramInString438",
+            "request": "launch",
+            "mainClass": "array.AnagramInString438",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayDecodingProblem",
+            "request": "launch",
+            "mainClass": "array.ArrayDecodingProblem",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayRotation",
+            "request": "launch",
+            "mainClass": "array.ArrayRotation",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContiguousArrayLeetCode",
+            "request": "launch",
+            "mainClass": "array.ContiguousArrayLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountNoOfIndecesLessThanIt",
+            "request": "launch",
+            "mainClass": "array.CountNoOfIndecesLessThanIt",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistributionArrayLeetCode575",
+            "request": "launch",
+            "mainClass": "array.DistributionArrayLeetCode575",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DuplocatesInArray",
+            "request": "launch",
+            "mainClass": "array.DuplocatesInArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindGap",
+            "request": "launch",
+            "mainClass": "array.FindGap",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindNumberExample",
+            "request": "launch",
+            "mainClass": "array.FindNumberExample",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstNonReppeatingCharArray",
+            "request": "launch",
+            "mainClass": "array.FirstNonReppeatingCharArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstRepeatingCharacter",
+            "request": "launch",
+            "mainClass": "array.FirstRepeatingCharacter",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloodFillLeetCode",
+            "request": "launch",
+            "mainClass": "array.FloodFillLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FrequencySortLeetCode",
+            "request": "launch",
+            "mainClass": "array.FrequencySortLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch KClosestPointsFromOriginLeetCode",
+            "request": "launch",
+            "mainClass": "array.KClosestPointsFromOriginLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestAlternatSubSeq",
+            "request": "launch",
+            "mainClass": "array.LongestAlternatSubSeq",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestCommanPrefixLeetCode14",
+            "request": "launch",
+            "mainClass": "array.LongestCommanPrefixLeetCode14",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestIncreasingSubSequenceAlgoBook",
+            "request": "launch",
+            "mainClass": "array.LongestIncreasingSubSequenceAlgoBook",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestStringHavingKDistinctCharaterSWT",
+            "request": "launch",
+            "mainClass": "array.LongestStringHavingKDistinctCharaterSWT",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestSubstringArray",
+            "request": "launch",
+            "mainClass": "array.LongestSubstringArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxSumCircularArrayLeetCode",
+            "request": "launch",
+            "mainClass": "array.MaxSumCircularArrayLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumSumContiguosSubArraySWT",
+            "request": "launch",
+            "mainClass": "array.MaximumSumContiguosSubArraySWT",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazorityElement",
+            "request": "launch",
+            "mainClass": "array.MazorityElement",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeArrayGFG",
+            "request": "launch",
+            "mainClass": "array.MergeArrayGFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch OnlineStockSpannerLeetCode",
+            "request": "launch",
+            "mainClass": "array.OnlineStockSpannerLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "array.QuickSort",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RLEIterator_Leetcode_900",
+            "request": "launch",
+            "mainClass": "array.RLEIterator_Leetcode_900",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveAdjucent",
+            "request": "launch",
+            "mainClass": "array.RemoveAdjucent",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotetedSortedArray",
+            "request": "launch",
+            "mainClass": "array.RotetedSortedArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunLengthEncodingLeetCode",
+            "request": "launch",
+            "mainClass": "array.RunLengthEncodingLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SmallestPositiveIntMissing",
+            "request": "launch",
+            "mainClass": "array.SmallestPositiveIntMissing",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SmallestSubArraySumSWT",
+            "request": "launch",
+            "mainClass": "array.SmallestSubArraySumSWT",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sort01Arrays",
+            "request": "launch",
+            "mainClass": "array.Sort01Arrays",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubArraySum",
+            "request": "launch",
+            "mainClass": "array.SubArraySum",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOf2EqualsX",
+            "request": "launch",
+            "mainClass": "array.SumOf2EqualsX",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZeoOneSort",
+            "request": "launch",
+            "mainClass": "array.ZeoOneSort",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindElementInRotatedLeetCode",
+            "request": "launch",
+            "mainClass": "array.rotation.FindElementInRotatedLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeftRotationArray",
+            "request": "launch",
+            "mainClass": "array.rotation.LeftRotationArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchInRoted",
+            "request": "launch",
+            "mainClass": "array.rotation.SearchInRoted",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch subArraySumNegative",
+            "request": "launch",
+            "mainClass": "array.subArraySumNegative",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RateInTheMaze",
+            "request": "launch",
+            "mainClass": "backtracking.RateInTheMaze",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch BSTInorderSuccesor",
+            "request": "launch",
+            "mainClass": "bst.BSTInorderSuccesor",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckForBST",
+            "request": "launch",
+            "mainClass": "bst.CheckForBST",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiameterOfTree",
+            "request": "launch",
+            "mainClass": "bst.DiameterOfTree",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertInBSTTusharRoy",
+            "request": "launch",
+            "mainClass": "bst.InsertInBSTTusharRoy",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCABinaryTree",
+            "request": "launch",
+            "mainClass": "bst.LCABinaryTree",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeftViewTest",
+            "request": "launch",
+            "mainClass": "bst.LeftViewTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LevelOrderChange",
+            "request": "launch",
+            "mainClass": "bst.LevelOrderChange",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LowestCommonAnsester",
+            "request": "launch",
+            "mainClass": "bst.LowestCommonAnsester",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "bst.ReverseLevelOrderTraversal",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchInBSTTusharRoy",
+            "request": "launch",
+            "mainClass": "bst.SearchInBSTTusharRoy",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpiralOrderTree",
+            "request": "launch",
+            "mainClass": "bst.SpiralOrderTree",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubTreeEqualNoOf0s1sGFG",
+            "request": "launch",
+            "mainClass": "bst.SubTreeEqualNoOf0s1sGFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch TrieDataStructureTest",
+            "request": "launch",
+            "mainClass": "bst.TrieDataStructureTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch TrieSearchTest2",
+            "request": "launch",
+            "mainClass": "bst.TrieSearchTest2",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PreOrderTraversal",
+            "request": "launch",
+            "mainClass": "bst.traversal.PreOrderTraversal",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomMapTest",
+            "request": "launch",
+            "mainClass": "collactions.CustomMapTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ComparatorTest",
+            "request": "launch",
+            "mainClass": "comprator.ComparatorTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DequeueTest",
+            "request": "launch",
+            "mainClass": "dequeue.DequeueTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeedVendingMachine",
+            "request": "launch",
+            "mainClass": "designConcepts.vendingMachin.SeedVendingMachine",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestSocketImpl",
+            "request": "launch",
+            "mainClass": "designpattern.adapter.TestSocketImpl",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch DrawingClient",
+            "request": "launch",
+            "mainClass": "designpattern.flyweight.DrawingClient",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dualton",
+            "request": "launch",
+            "mainClass": "designpattern.singleton.Dualton",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Knapsack01",
+            "request": "launch",
+            "mainClass": "dp.Knapsack01",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LIS",
+            "request": "launch",
+            "mainClass": "dp.LIS",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MackingChangeDP",
+            "request": "launch",
+            "mainClass": "dp.MackingChangeDP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumTipProplem",
+            "request": "launch",
+            "mainClass": "dp.MaximumTipProplem",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch NoOfJumpsDP",
+            "request": "launch",
+            "mainClass": "dp.NoOfJumpsDP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ScoreParanthisesDP",
+            "request": "launch",
+            "mainClass": "dp.ScoreParanthisesDP",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CourceScheduleLeetCode",
+            "request": "launch",
+            "mainClass": "graph.CourceScheduleLeetCode",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch GraphTraversalHackerRank",
+            "request": "launch",
+            "mainClass": "graph.GraphTraversalHackerRank",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch KthLargestMinHeapLeetCode215",
+            "request": "launch",
+            "mainClass": "heap.KthLargestMinHeapLeetCode215",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Maxheap",
+            "request": "launch",
+            "mainClass": "heap.Maxheap",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch FunctionOverLoadingTest",
+            "request": "launch",
+            "mainClass": "inheritance.FunctionOverLoadingTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PackageTest",
+            "request": "launch",
+            "mainClass": "inheritance.sub.PackageTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InterfaeTest",
+            "request": "launch",
+            "mainClass": "interfaces.InterfaeTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CastVotesTest",
+            "request": "launch",
+            "mainClass": "interviews.GFG.CastVotesTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SlidingWindowDqueueGFG",
+            "request": "launch",
+            "mainClass": "interviews.GFG.SlidingWindowDqueueGFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SlidingWindowGFG",
+            "request": "launch",
+            "mainClass": "interviews.GFG.SlidingWindowGFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InheritanceOutPut1",
+            "request": "launch",
+            "mainClass": "javaConcept.InheritanceOutPut1",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PassByValueTest",
+            "request": "launch",
+            "mainClass": "javaConcept.PassByValueTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SerilizableTest",
+            "request": "launch",
+            "mainClass": "javaConcept.SerilizableTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch StreamsExamples",
+            "request": "launch",
+            "mainClass": "javaConcept.streams.StreamsExamples",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch EqualTest",
+            "request": "launch",
+            "mainClass": "javaInterview.EqualTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LFUCache",
+            "request": "launch",
+            "mainClass": "lru.LFUCache",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LRUCacche3",
+            "request": "launch",
+            "mainClass": "lru.LRUCacche3",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LRUCacheTest",
+            "request": "launch",
+            "mainClass": "lru.LRUCacheTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountIslandsTest",
+            "request": "launch",
+            "mainClass": "matrix.CountIslandsTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MazeTest",
+            "request": "launch",
+            "mainClass": "matrix.MazeTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch NoOfConnectionsMatrix",
+            "request": "launch",
+            "mainClass": "matrix.NoOfConnectionsMatrix",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateAntiClockWiseMatrix",
+            "request": "launch",
+            "mainClass": "matrix.RotateAntiClockWiseMatrix",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortedRotatedMatrixSearchTest",
+            "request": "launch",
+            "mainClass": "matrix.SortedRotatedMatrixSearchTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Pattern1",
+            "request": "launch",
+            "mainClass": "pattern.Pattern1",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch AmazonTestFeb",
+            "request": "launch",
+            "mainClass": "practice.AmazonTestFeb",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnagramMakeAnagramHcrank",
+            "request": "launch",
+            "mainClass": "practice.AnagramMakeAnagramHcrank",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayEquilibriumTest",
+            "request": "launch",
+            "mainClass": "practice.ArrayEquilibriumTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountValley",
+            "request": "launch",
+            "mainClass": "practice.CountValley",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch EquiliseArrayHcrank",
+            "request": "launch",
+            "mainClass": "practice.EquiliseArrayHcrank",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch GFG",
+            "request": "launch",
+            "mainClass": "practice.GFG",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch HackerBlueOptima",
+            "request": "launch",
+            "mainClass": "practice.HackerBlueOptima",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch HackerEarthTrainSeatNo",
+            "request": "launch",
+            "mainClass": "practice.HackerEarthTrainSeatNo",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch HackerrankCapilaryJavaChalenge16",
+            "request": "launch",
+            "mainClass": "practice.HackerrankCapilaryJavaChalenge16",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch HourGlass2dArray",
+            "request": "launch",
+            "mainClass": "practice.HourGlass2dArray",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch InfiniteStringRepetition",
+            "request": "launch",
+            "mainClass": "practice.InfiniteStringRepetition",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch JumpCloud",
+            "request": "launch",
+            "mainClass": "practice.JumpCloud",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MissingNo",
+            "request": "launch",
+            "mainClass": "practice.MissingNo",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch OverLappingRacTangleTest",
+            "request": "launch",
+            "mainClass": "practice.OverLappingRacTangleTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeNoCheck",
+            "request": "launch",
+            "mainClass": "practice.PrimeNoCheck",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintJava",
+            "request": "launch",
+            "mainClass": "practice.PrintJava",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SockMerchantHcrank",
+            "request": "launch",
+            "mainClass": "practice.SockMerchantHcrank",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sorting012s",
+            "request": "launch",
+            "mainClass": "practice.Sorting012s",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubArrayWithSum",
+            "request": "launch",
+            "mainClass": "practice.SubArrayWithSum",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch kadaneAlgo",
+            "request": "launch",
+            "mainClass": "practice.kadaneAlgo",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumSlidingWindowTest",
+            "request": "launch",
+            "mainClass": "practice.leetcode.MaximumSlidingWindowTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch LargestPalendrom",
+            "request": "launch",
+            "mainClass": "practice.spoj.LargestPalendrom",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProgrammingTest",
+            "request": "launch",
+            "mainClass": "primitives.ProgrammingTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxStack",
+            "request": "launch",
+            "mainClass": "stack.MaxStack",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckRotatedString",
+            "request": "launch",
+            "mainClass": "string.CheckRotatedString",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch MostCommonWordLeetCode819",
+            "request": "launch",
+            "mainClass": "string.MostCommonWordLeetCode819",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch KthSmallestNumberInArrayARRAY2",
+            "request": "launch",
+            "mainClass": "techDosePlan.KthSmallestNumberInArrayARRAY2",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReaarangePositiveNegativeNumbersAlternateARRAY2",
+            "request": "launch",
+            "mainClass": "techDosePlan.ReaarangePositiveNegativeNumbersAlternateARRAY2",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch RearrangeArrayBasedMinMaxARRAYP1",
+            "request": "launch",
+            "mainClass": "techDosePlan.RearrangeArrayBasedMinMaxARRAYP1",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReEntrantlockExample",
+            "request": "launch",
+            "mainClass": "thread.ReEntrantlockExample",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadJoinExample",
+            "request": "launch",
+            "mainClass": "thread.ThreadJoinExample",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch EvenOddNumbers",
+            "request": "launch",
+            "mainClass": "threading.EvenOddNumbers",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch JoinDemo",
+            "request": "launch",
+            "mainClass": "threading.JoinDemo",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch NotThreadSafeTest",
+            "request": "launch",
+            "mainClass": "threading.NotThreadSafeTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProdcerConsumerTest",
+            "request": "launch",
+            "mainClass": "threading.ProdcerConsumerTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadBasic",
+            "request": "launch",
+            "mainClass": "threading.ThreadBasic",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadLocalExample",
+            "request": "launch",
+            "mainClass": "threading.ThreadLocalExample",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreadRunTesting",
+            "request": "launch",
+            "mainClass": "threading.ThreadRunTesting",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaitNotifyTest",
+            "request": "launch",
+            "mainClass": "threading.WaitNotifyTest",
+            "projectName": "JavaPrograms_742a979c"
+        },
+        {
+            "type": "java",
+            "name": "Launch WrapperClassTest",
+            "request": "launch",
+            "mainClass": "wrapper.WrapperClassTest",
+            "projectName": "JavaPrograms_742a979c"
+        }
+    ]
+}

@@ -7,11 +7,12 @@ public class NoOfJumpsDP {
         int array [] =  new int[]{2,3,1,1,4};
         NoOfJumpsDP obj = new NoOfJumpsDP();
         HashMap<Integer, Integer> map = new LinkedHashMap<>();
-       // System.out.println(obj.minimumNoOfJumps(array, 0, 0));
-        //System.out.println(obj.minimumNoOfJumpsDP(array, 0, 0, map));
-        array = new int[] {1, 3, 5, 3, 3,1,1,1,1,1,1,1,1,4};
+        //System.out.println(obj.minimumNoOfJumps(array, 0, 0));
         System.out.println(obj.minimumNoOfJumpsDP(array, 0, 0, map));
-        System.out.println(obj.minimumNoOfJumps(array, 0, 0));
+        array = new int[] {1, 3, 5, 3, 3,1,1,1,1,1,1,1,1,4};
+        HashMap<Integer, Integer> map1 = new LinkedHashMap<>();
+        System.out.println(obj.minimumNoOfJumpsDP(array, 0, 0, map1));
+        //System.out.println(obj.minimumNoOfJumps(array, 0, 0));
 
     }
 
@@ -47,6 +48,7 @@ public class NoOfJumpsDP {
         for(int i = 1; i<= jump; i++) {
             int jumpno = minimumNoOfJumpsDP(array, start + i, noOfJumps +1, map);
             lastMax = Math.min(jumpno, lastMax);
+            //map.put(start + i, lastMax);
         }
         map.put(start, lastMax);
         return lastMax;
