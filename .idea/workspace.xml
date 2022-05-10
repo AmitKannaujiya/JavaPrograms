@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c7b8c4-f5ad-4111-a49c-e19581c88fcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algoMadeEasyBook/ConstructBSTFromInorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algoMadeEasyBook/ConstructBSTFromInorder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/NoOfJumpsDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/NoOfJumpsDP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,36 +20,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dp/LIS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dp/TriangleSumLeetCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/techDosePlan/CarPoolingLeetCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-start-column="2" selection-end-line="21" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dp/MinimumNoOfJump.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -64,17 +31,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dp/NoOfJumpsDP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="735">
               <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/string/PhasePalindrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="24" selection-start-line="24" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="390">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pattern/PascalTriangle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dp/CoinChangeNew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-180">
+              <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dp/LCSNv.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="33" column="27" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -143,9 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/inheritance/A.java" />
-        <option value="$PROJECT_DIR$/src/inheritance/FunctionOverLoadingTest.java" />
-        <option value="$PROJECT_DIR$/src/inheritance/B.java" />
         <option value="$PROJECT_DIR$/src/inheritance/C.java" />
         <option value="$PROJECT_DIR$/src/inheritance/sub/D.java" />
         <option value="$PROJECT_DIR$/src/inheritance/sub/PackageTest.java" />
@@ -194,6 +188,9 @@
         <option value="$PROJECT_DIR$/src/dp/MinimumNoOfJump.java" />
         <option value="$PROJECT_DIR$/src/dp/NoOfJumpsDP.java" />
         <option value="$PROJECT_DIR$/src/string/PhasePalindrome.java" />
+        <option value="$PROJECT_DIR$/src/pattern/PascalTriangle.java" />
+        <option value="$PROJECT_DIR$/src/dp/CoinChangeNew.java" />
+        <option value="$PROJECT_DIR$/src/dp/LCSNv.java" />
       </list>
     </option>
   </component>
@@ -211,6 +208,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,14 +226,30 @@
               <item name="JavaPrograms" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaPrograms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="string" type="462c0819:PsiDirectoryNode" />
+              <item name="algoMadeEasyBook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaPrograms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaPrograms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaPrograms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaPrograms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaPrograms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaPrograms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bst" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,9 +271,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PhasePalindrome">
-    <configuration name="LIS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.LIS" />
+  <component name="RunManager" selected="Application.LCSNv">
+    <configuration name="CoinChangeNew" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.CoinChangeNew" />
       <module name="JavaPrograms" />
       <extension name="coverage">
         <pattern>
@@ -270,8 +285,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinimumNoOfJump" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.MinimumNoOfJump" />
+    <configuration name="LCSNv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.LCSNv" />
       <module name="JavaPrograms" />
       <extension name="coverage">
         <pattern>
@@ -296,6 +311,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PascalTriangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pattern.PascalTriangle" />
+      <module name="JavaPrograms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PhasePalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="string.PhasePalindrome" />
       <module name="JavaPrograms" />
@@ -309,26 +337,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleSumLeetCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.TriangleSumLeetCode" />
-      <module name="JavaPrograms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LCSNv" />
+        <item itemvalue="Application.CoinChangeNew" />
+        <item itemvalue="Application.PascalTriangle" />
         <item itemvalue="Application.PhasePalindrome" />
         <item itemvalue="Application.NoOfJumpsDP" />
-        <item itemvalue="Application.MinimumNoOfJump" />
-        <item itemvalue="Application.TriangleSumLeetCode" />
-        <item itemvalue="Application.LIS" />
       </list>
     </recent_temporary>
   </component>
@@ -347,9 +362,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24860558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26454183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -359,7 +373,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -369,7 +383,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32884902" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24940239" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
@@ -489,8 +503,30 @@
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pattern/PascalTriangle.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pattern/PascalTriangle.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/pattern/PascalTriangle.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -594,27 +630,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lru/LFUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lru/LFUCache2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lru/LRUCache4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lru/LRUCacheFirst.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -664,16 +679,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/practice/HackerBlueOptima.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="49" column="23" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/practice/HackerBlueOptima.java" />
     <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/IntegerPalindrom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -975,6 +981,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dp/NoOfJumpsDP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/string/PhasePalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/algoMadeEasyBook/ConstructBSTFromInorder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1006,17 +1026,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dp/NoOfJumpsDP.java">
+    <entry file="file://$PROJECT_DIR$/src/dp/CoinChangeNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="-180">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/string/PhasePalindrome.java">
+    <entry file="file://$PROJECT_DIR$/src/pattern/PascalTriangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="24" selection-start-line="24" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="116">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dp/LCSNv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="27" />
         </state>
       </provider>
     </entry>
