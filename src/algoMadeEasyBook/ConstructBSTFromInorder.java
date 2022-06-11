@@ -10,6 +10,13 @@ public class ConstructBSTFromInorder {
         ConstructBSTFromInorder oBstFromInorder = new ConstructBSTFromInorder();
         BST<Integer> root = oBstFromInorder.constructBST(array, 0, array.length-1, null);
         oBstFromInorder.inorder(root);
+        int [] array2 = new int[]{5, 10, 40, 30, 28};
+        System.out.println();
+        BST<Integer> root2 = oBstFromInorder.constructBST(array2, 0, array2.length-1, null);
+        oBstFromInorder.inorder(root2);
+        //6,7,8,2,7,1,3,9,null,1,4,null,null,null,5
+
+
     }
 
     private void inorder(BST<Integer> root) {

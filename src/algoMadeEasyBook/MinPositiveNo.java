@@ -9,6 +9,9 @@ public class MinPositiveNo {
         System.out.println(solution(new int[]{3, 4, -1, 1}));
         System.out.println(solution(new int[]{1, 0, 2}));
         System.out.println(solution(new int[]{2, 3, 7, 6, 8, -1, -10, 15}));
+        System.out.println(firstMissingPositive(new int[]{1, 0, 2}));
+        System.out.println(firstMissingPositive(new int[]{3,4,-1,1}));
+        System.out.println(firstMissingPositive(new int[]{7,8,9,11,12}));
 
     }
 
@@ -30,5 +33,28 @@ public class MinPositiveNo {
             missing++;
         }
         return missing;
+    }
+
+    public static int firstMissingPositive(int[] nums) {
+        int k=0;
+        int m = 1;
+
+        for(int i=0; i<nums.length; i++){
+            if(k < nums[i]) {
+                k=nums[i];
+            }
+        }
+        int[] d=new int[k+2];
+        for(int i=0;i<nums.length; i++) {
+            if(nums[i] > 0) {
+                d[nums[i]] =1;
+            }
+        }
+        for(int i=1; i<=k+1; i++) {
+            if(d[i] == 0 ) {
+                return i;
+            }
+        }
+        return m;
     }
 }

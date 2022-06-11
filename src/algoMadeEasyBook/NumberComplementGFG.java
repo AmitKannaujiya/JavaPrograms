@@ -3,7 +3,7 @@ package algoMadeEasyBook;
 public class NumberComplementGFG {
     public static void main(String[] args) {
         NumberComplementGFG obj = new NumberComplementGFG();
-        System.out.println(obj.findComplement(5));
+        System.out.println(obj.findComplement(7));
     }
 
     public int findComplement(int num) {
@@ -18,7 +18,7 @@ public class NumberComplementGFG {
                 res |= 1<< i;
             }
         }
-        System.out.println(res);
+        //System.out.println(res);
         return num ^ res;
     }
 }
